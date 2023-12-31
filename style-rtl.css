@@ -761,6 +761,232 @@ a {
   max-width: 1280px;
   margin: auto;
 }
+.homePageBack {
+  background-color: #282828;
+}
+.homePageBack .mainHome {
+  color: white;
+  max-width: 1280px;
+  margin: auto;
+}
+.homePageBack .mainHome .holdingZar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.homePageBack .mainHome .holdingZar .title {
+  width: 35%;
+  text-align: right;
+}
+.homePageBack .mainHome .holdingZar .title h2 {
+  font-size: 40px;
+  margin-bottom: 0;
+}
+.homePageBack .mainHome .holdingZar .title span {
+  color: #cdb578;
+  display: block;
+}
+.homePageBack .mainHome .holdingZar .title a {
+  margin-left: 15px;
+  padding: 5px 10px;
+}
+.homePageBack .mainHome .holdingZar .title a.readMore {
+  background-color: #cdb578;
+  color: black;
+  border-radius: 7px;
+}
+.homePageBack .mainHome .holdingZar .img {
+  width: 62%;
+  position: relative;
+}
+.homePageBack .mainHome .holdingZar .img .row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: 9px;
+  width: 100%;
+  background-color: rgba(63, 63, 63, 0.6);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+.homePageBack .mainHome .holdingZar .img .row div {
+  padding: 15px 0;
+}
+.homePageBack .mainHome .holdingZar .img .row h3 {
+  text-align: center;
+  font-size: 33px;
+  font-weight: 900;
+  margin: 0;
+  color: #cdb578;
+}
+.homePageBack .mainHome .holdingZar .img .row p {
+  margin: 0;
+}
+.homePageBack .mainHome .ourServices {
+  padding: 150px 0;
+  text-align: center;
+}
+.homePageBack .mainHome .ourServices h2 {
+  color: #cdb578;
+  font-size: 25px;
+  margin: 0;
+  font-weight: 800;
+}
+.homePageBack .mainHome .ourServices p {
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 100;
+}
+.homePageBack .mainHome .ourServices .cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+.homePageBack .mainHome .ourServices .cards .card {
+  width: 23%;
+  height: auto;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-image: linear-gradient(rgba(19, 19, 19, 0.651), rgb(40, 40, 40));
+  padding: 50px 0;
+}
+.homePageBack .mainHome .ourServices .cards .card path, .homePageBack .mainHome .ourServices .cards .card circle {
+  fill: #cdb578;
+}
+.homePageBack .mainHome .ourServices .cards .card h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.homePageBack .mainHome .ourServices .cards .card p {
+  margin: 0;
+  padding: 0 20px;
+}
+.homePageBack .mainHome .holdingServices {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.homePageBack .mainHome .holdingServices .text {
+  width: 45%;
+}
+.homePageBack .mainHome .holdingServices .text h4 {
+  font-size: 14px;
+  font-weight: 300;
+}
+.homePageBack .mainHome .holdingServices .text h2 {
+  font-size: 40px;
+  margin: 15px 0;
+}
+.homePageBack .mainHome .holdingServices .text h2 span {
+  color: #cdb578;
+}
+.homePageBack .mainHome .holdingServices .text p {
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: 300;
+  margin: 10px 0 25px;
+}
+.homePageBack .mainHome .holdingServices .text a {
+  border: 1px solid white;
+  padding: 8px 18px;
+  border-radius: 10px;
+}
+
+.aboutPageBack .mainView {
+  max-width: 1280px;
+  margin: auto;
+}
+.aboutPageBack .mainView .introSection {
+  text-align: center;
+}
+.aboutPageBack .mainView .introSection img {
+  border-radius: 10px;
+  margin: 10px 0 0 0;
+}
+.aboutPageBack .mainView .introSection .titles {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.aboutPageBack .mainView .introSection .titles .titleOne {
+  width: 48%;
+  text-align: right;
+}
+.aboutPageBack .mainView .introSection .titles .titleOne p {
+  line-height: 30px;
+  font-size: 14px;
+  color: rgb(77, 77, 77);
+}
+.aboutPageBack .mainView .introSection .titles .titleTwo {
+  width: 44%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aboutPageBack .mainView .introSection .titles .titleTwo .borderRight {
+  border-right: 3px solid rgb(157, 157, 157);
+}
+.aboutPageBack .mainView .introSection .titles .titleTwo div {
+  padding: 0 30px;
+}
+.aboutPageBack .mainView .introSection .titles .titleTwo div span {
+  font-size: 18px;
+  font-weight: 700;
+}
+.aboutPageBack .mainView .introSection .titles .titleTwo div h2 {
+  font-size: 45px;
+  margin: 10px 0 0 0;
+}
+.aboutPageBack .mainView .introSection .titles h2 {
+  color: #002D64;
+}
+.aboutPageBack .mainView .main {
+  margin: 50px 0;
+}
+.aboutPageBack .mainView .main .row {
+  margin: 60px 0;
+}
+.aboutPageBack .mainView .main .title h4 {
+  color: #002D64;
+  margin: 15px 10px;
+  font-size: 18px;
+}
+.aboutPageBack .mainView .main .cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.aboutPageBack .mainView .main .cards .card {
+  border: 1px solid rgba(176, 176, 176, 0.715);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+.aboutPageBack .mainView .main .cards .card img {
+  border-radius: 10px;
+}
+.aboutPageBack .mainView .main .cards .card h3 {
+  margin: 0;
+  color: #002D64;
+}
+.aboutPageBack .mainView .main .cards .card span {
+  font-size: 14px;
+  color: gray;
+  font-weight: 500;
+}
+.aboutPageBack .mainView .main .cards .card div.svg {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.aboutPageBack .mainView .main .cards .card div.svg a {
+  display: flex;
+}
+
 .mainFooterBack {
   background-color: #1e1e1e;
   padding: 50px 20px;

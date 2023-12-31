@@ -727,7 +727,235 @@ a{
 
     }
 }
-
+.homePageBack{
+    background-color: #282828;
+    .mainHome{ 
+        color: white;
+        max-width: 1280px;
+        margin: auto;
+        .holdingZar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .title{
+              width: 35%;
+              text-align: right;
+              h2{
+                font-size: 40px;
+                margin-bottom: 0;
+              }
+              span{
+                color: #cdb578;
+                display: block;
+              }
+              a{
+                margin-left: 15px;
+                padding: 5px 10px;
+                // font-size: 18px;
+              }
+              a.readMore{
+                background-color: #cdb578;
+                color: black;
+                border-radius: 7px;
+              }
+            }
+            .img{
+              width: 62%;
+              position: relative;
+              .row{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                position: absolute;
+                bottom: 9px;
+                width: 100%;
+                background-color: rgba(63, 63, 63, 0.6);
+                backdrop-filter: blur(5px);
+                div{
+                    padding: 15px 0;
+                }
+                h3{
+                    text-align: center;
+                  font-size: 33px;
+                  font-weight: 900;
+                  margin: 0;
+                  color: #cdb578;
+                }
+                p{
+                    margin: 0;
+                }
+              }
+            }
+        }
+        .ourServices{
+            padding: 150px 0;
+            text-align: center;
+            h2{
+                color: #cdb578;
+                font-size: 25px;
+                margin: 0;
+                font-weight: 800;
+            }
+            p{
+                font-size: 13px;
+                text-align: center;
+                margin-bottom: 50px;
+                font-weight: 100;
+            }
+            .cards{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+            .card{
+                width: 23%;
+                height: auto;
+                border: 1px solid white ;
+                border-radius: 10px;
+                background-image: linear-gradient(rgba(19, 19, 19, 0.651), rgb(40, 40, 40));
+                padding: 50px 0;
+                path,circle{
+                    fill: #cdb578;
+                   }
+                    h3{
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+                    p{
+                        margin: 0;
+                        padding: 0 20px;
+                    }
+                }
+            }
+        }
+        .holdingServices{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .text{
+                width: 45%;
+                h4{
+                    font-size: 14px;
+                    font-weight: 300;
+                }
+                h2{
+                    font-size: 40px;
+                    margin: 15px 0;
+                    span{
+                        color: #cdb578;
+                    }
+                }
+                p{
+                    font-size: 15px;
+                    line-height: 28px;
+                    font-weight: 300;
+                    margin: 10px 0 25px;
+                }
+                a{
+                    border: 1px solid white;
+                    padding: 8px 18px;
+                    border-radius: 10px;
+                    
+                }
+            }
+        }
+    }
+}
+.aboutPageBack{
+    .mainView{
+        max-width: 1280px;
+        margin: auto;
+        .introSection{
+            text-align: center;
+            img{
+                border-radius: 10px;
+                margin: 10px 0 0 0;
+            }
+            .titles{
+                display: flex;
+                justify-content: space-between;
+                padding: 0 10px;
+                .titleOne{
+                    width: 48%;
+                    text-align: right;
+                    p{
+                        line-height: 30px;
+                        font-size: 14px;
+                        color: rgb(77, 77, 77);
+                    }
+                }
+                .titleTwo{
+                    width: 44%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .borderRight{
+                        border-right: 3px solid rgb(157, 157, 157);
+                    }
+                    div{
+                        padding: 0 30px;
+                        span{
+                            font-size: 18px;
+                            font-weight: 700;
+                        }
+                        h2{
+                            font-size: 45px;
+                            margin: 10px 0 0 0 ;
+                        }
+                    }
+                }
+                h2{
+                    color: #002D64;
+                }
+            }
+        }
+        .main{
+            margin: 50px 0;
+            .row{
+                margin: 60px 0;
+            }
+            .title{
+                h4{
+                    color: #002D64;
+                    margin: 15px 10px;
+                    font-size: 18px;
+                }
+            }
+            .cards{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .card{
+                    border: 1px solid rgba(176, 176, 176, 0.715);
+                    padding: 15px;
+                    border-radius: 10px;
+                    text-align: center;
+                    img{
+                        border-radius: 10px;
+                    }
+                    h3{
+                        margin: 0;
+                        color: #002D64;
+                    }
+                    span{
+                        font-size: 14px;
+                        color: gray;
+                        font-weight: 500;
+                    }
+                    div.svg{
+                        margin-top: 8px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        a{
+                            display: flex;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 .mainFooterBack{
     background-color: #1e1e1e;
     padding: 50px 20px;
