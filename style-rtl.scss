@@ -707,11 +707,12 @@ a{
             align-items: center;
             svg{
                 margin-right: 20px;
+                path,circle{
+                    fill: white;
+                   }
             }
         }
-        path,circle{
-            fill: white;
-           }
+        
     }
     .mainView{
         max-width: 1280px;
