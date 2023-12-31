@@ -727,15 +727,21 @@ a {
   display: flex;
   flex-direction: column;
   visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s;
+}
+.mainHeaderBack .mainHeader .menuSection ul li ul :last-child {
+  border: none;
 }
 .mainHeaderBack .mainHeader .menuSection ul li ul li {
   border-bottom: 1px solid black;
 }
-.mainHeaderBack .mainHeader .menuSection ul li ul #menu-item-29 {
-  border: none;
+.mainHeaderBack .mainHeader .menuSection ul li ul li a {
+  font-weight: 300;
 }
 .mainHeaderBack .mainHeader .menuSection ul li:hover ul {
   visibility: visible;
+  opacity: 1;
 }
 .mainHeaderBack .mainHeader .menuSection #menu-item-21 {
   color: #cdb578;

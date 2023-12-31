@@ -684,16 +684,21 @@ a{
                     display: flex;
                     flex-direction: column;
                     visibility: hidden;
-                    
+                    opacity: 0;
+                    transition: all 0.2s;
+                    :last-child{
+                        border: none;
+                    }
                     li{
                         border-bottom: 1px solid black;
-                    }
-                    #menu-item-29{
-                        border: none;
+                        a{
+                            font-weight: 300;
+                        }
                     }
                 }
                 &:hover ul{
                     visibility: visible;
+                    opacity: 1;
                 }
             }
             }
