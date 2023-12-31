@@ -653,6 +653,52 @@ a{
         }
     }
 }
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.mainHeaderBack{
+    background-color: #282828;
+    color: white;
+    .mainHeader{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .menuSection{
+            ul{
+                display: flex;
+            justify-content: space-between;
+            align-items: center;
+            li{
+                list-style: none;
+                padding: 5px 10px;
+                font-weight: 600;
+            }
+            }
+            #menu-item-21{
+                color: #cdb578;
+            }
+        }
+        .signSection{
+            display: flex;
+            align-items: center;
+            svg{
+                margin-right: 20px;
+            }
+        }
+        path,circle{
+            fill: white;
+           }
+    }
+    .mainView{
+        max-width: 1280px;
+        margin: auto;
+    }
+    svg{
+
+    }
+}
+
 .mainFooterBack{
     background-color: #1e1e1e;
     padding: 50px 20px;
