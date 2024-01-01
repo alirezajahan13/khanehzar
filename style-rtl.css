@@ -717,6 +717,7 @@ a {
   font-weight: 600;
 }
 .mainHeaderBack .mainHeader .menuSection ul li ul {
+  z-index: 100;
   position: absolute;
   background-color: white;
   color: black;
@@ -838,6 +839,16 @@ a {
   text-align: center;
   margin-bottom: 50px;
   font-weight: 100;
+}
+.homePageBack .mainHome .ourServices .swiper-pagination {
+  position: unset !important;
+}
+.homePageBack .mainHome .ourServices .swiper-pagination span {
+  background: white;
+  opacity: 100%;
+}
+.homePageBack .mainHome .ourServices .swiper-pagination .swiper-pagination-bullet-active {
+  background: #cdb578;
 }
 .homePageBack .mainHome .ourServices .cards {
   display: flex;
