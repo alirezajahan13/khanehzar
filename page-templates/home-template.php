@@ -192,6 +192,68 @@ get_header();
                 <div class="mainHomeRequestInnerImg"><img src="<?php echo get_template_directory_uri() ?>/img/ou9.png"></div>
             </div>
         </div>
+        <div class="ourProject">
+            <h2>پروژه های ما</h2>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+            <a href="#">موارد بیشتر ></a>
+            <div class="swiper projectSwiper">
+                <div class="cards swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <img src="<?php echo get_template_directory_uri() ?>/img/home.jpg" alt="" height="400px" width="100%">
+                        <div class="text">
+                        <svg width="40" height="40" viewBox="-64 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M365.52 209.85 59.22 67.01c-16.06-7.49-35.15-.54-42.64 15.52L3.01 111.61c-7.49 16.06-.54 35.15 15.52 42.64L236.96 256.1 18.49 357.99C2.47 365.46-4.46 384.5 3.01 400.52l13.52 29C24 445.54 43.04 452.47 59.06 445l306.47-142.91a32.003 32.003 0 0 0 18.48-29v-34.23c-.01-12.45-7.21-23.76-18.49-29.01z"/></svg>
+                        <h3>پروژه پرواز</h3>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="<?php echo get_template_directory_uri() ?>/img/home.jpg" alt="" height="400px" width="100%">
+                        <div class="text">
+                        <svg width="40" height="40" viewBox="-64 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M365.52 209.85 59.22 67.01c-16.06-7.49-35.15-.54-42.64 15.52L3.01 111.61c-7.49 16.06-.54 35.15 15.52 42.64L236.96 256.1 18.49 357.99C2.47 365.46-4.46 384.5 3.01 400.52l13.52 29C24 445.54 43.04 452.47 59.06 445l306.47-142.91a32.003 32.003 0 0 0 18.48-29v-34.23c-.01-12.45-7.21-23.76-18.49-29.01z"/></svg>
+                        <h3>پروژه پرواز</h3>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="<?php echo get_template_directory_uri() ?>/img/home.jpg" alt="" height="400px" width="100%">
+                        <div class="text">
+                        <svg width="40" height="40" viewBox="-64 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M365.52 209.85 59.22 67.01c-16.06-7.49-35.15-.54-42.64 15.52L3.01 111.61c-7.49 16.06-.54 35.15 15.52 42.64L236.96 256.1 18.49 357.99C2.47 365.46-4.46 384.5 3.01 400.52l13.52 29C24 445.54 43.04 452.47 59.06 445l306.47-142.91a32.003 32.003 0 0 0 18.48-29v-34.23c-.01-12.45-7.21-23.76-18.49-29.01z"/></svg>
+                        <h3>پروژه پرواز</h3>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="<?php echo get_template_directory_uri() ?>/img/home.jpg" alt="" height="400px" width="100%">
+                        <div class="text">
+                        <svg width="40" height="40" viewBox="-64 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M365.52 209.85 59.22 67.01c-16.06-7.49-35.15-.54-42.64 15.52L3.01 111.61c-7.49 16.06-.54 35.15 15.52 42.64L236.96 256.1 18.49 357.99C2.47 365.46-4.46 384.5 3.01 400.52l13.52 29C24 445.54 43.04 452.47 59.06 445l306.47-142.91a32.003 32.003 0 0 0 18.48-29v-34.23c-.01-12.45-7.21-23.76-18.49-29.01z"/></svg>
+                        <h3>پروژه پرواز</h3>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="<?php echo get_template_directory_uri() ?>/img/home.jpg" alt="" height="400px" width="100%">
+                        <div class="text">
+                        <svg width="40" height="40" viewBox="-64 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M365.52 209.85 59.22 67.01c-16.06-7.49-35.15-.54-42.64 15.52L3.01 111.61c-7.49 16.06-.54 35.15 15.52 42.64L236.96 256.1 18.49 357.99C2.47 365.46-4.46 384.5 3.01 400.52l13.52 29C24 445.54 43.04 452.47 59.06 445l306.47-142.91a32.003 32.003 0 0 0 18.48-29v-34.23c-.01-12.45-7.21-23.76-18.49-29.01z"/></svg>
+                        <h3>پروژه پرواز</h3>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="<?php echo get_template_directory_uri() ?>/img/home.jpg" alt="" height="400px" width="100%">
+                        <div class="text">
+                        <svg width="40" height="40" viewBox="-64 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M365.52 209.85 59.22 67.01c-16.06-7.49-35.15-.54-42.64 15.52L3.01 111.61c-7.49 16.06-.54 35.15 15.52 42.64L236.96 256.1 18.49 357.99C2.47 365.46-4.46 384.5 3.01 400.52l13.52 29C24 445.54 43.04 452.47 59.06 445l306.47-142.91a32.003 32.003 0 0 0 18.48-29v-34.23c-.01-12.45-7.21-23.76-18.49-29.01z"/></svg>
+                        <h3>پروژه پرواز</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="request">
+            <h2>پروژه های ما</h2>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+            <div class="main">
+                <div class="form">
+                    <?php echo do_shortcode('[contact-form-7 id="554d9f0" title="درخواست"]') ?>
+                </div>
+                <img src="https://dummyimage.com/620x620/000/fff" alt="">
+            </div>
+        </div>
     </div>
 </div>
 

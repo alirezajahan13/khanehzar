@@ -859,6 +859,167 @@ a{
                 }
             }
         }
+        .ourProject{
+            padding: 75px 0;
+            text-align: center;
+            h2{
+                color: #cdb578;
+                font-size: 25px;
+                margin: 0;
+                font-weight: 800;
+            }
+            p{
+                font-size: 13px;
+                text-align: center;
+                margin-bottom: 50px;
+                font-weight: 100;
+            }
+            a{
+                text-align: left;
+                display: block;
+            }
+            svg{
+                fill: white;
+            }
+            .swiper-pagination{
+                position: unset !important;
+                span{
+                    background: white;
+                    opacity: 100%;
+                }
+                .swiper-pagination-bullet-active{
+                    background: #cdb578;
+                }
+            }
+            .cards{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 20px 0;
+                
+            }
+            .card{
+                width: 23%;
+                height: 400px;
+                position: relative;
+                img{
+                    border-radius: 10px;
+                }
+                .text{
+                    background: linear-gradient(rgba(19, 19, 19, 0.374),rgba(40, 40, 40, 0.92));
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0%;
+                    right: 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    h3{
+                        font-size: 25px;
+                        font-weight: 500;
+                    }
+                    svg{
+                        display: block;
+                        text-align: right;
+                        margin: 10px;
+                        border: 3px solid white;
+                        border-radius: 50%;
+                        padding: 7px;
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
+        }
+        .request{
+            padding: 75px 0;
+            text-align: center;
+            
+            h2{
+                color: #cdb578;
+                font-size: 25px;
+                margin: 0;
+                font-weight: 800;
+            }
+            p{
+                font-size: 13px;
+                text-align: center;
+                margin-bottom: 50px;
+                font-weight: 100;
+            }
+            .main{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .form{
+                    width: 40%;
+                }
+                .formRequest{
+                    text-align: right;
+                    display: flex;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    h4{
+                        font-weight: 400;
+                        margin: 0;
+                    }
+                    p{
+                        margin: 10px 0 40px 0;
+                        width: 90%;
+                    }
+                    input:focus {
+                        outline: none;
+                    }
+                    input[type="text"] {
+                        width: 100%;
+                        color: white;
+                        background-color: #282828;
+                        border: none;
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+                        padding: 8px 0;
+                        &::placeholder{
+                            color: white;
+                            font-size: 14px;
+                            font-weight: 200;
+                            font-family: 'yekanbakhweb' !important;
+                        }
+                    }
+                    input[type="email"] {
+                        width: 100%;
+                        color: white;
+                        background-color: #282828;
+                        border: none;
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+                        direction: rtl;
+                        padding: 8px 0;
+                        font-family: 'yekanbakhweb' !important;
+                        &::placeholder{
+                            color: white;
+                            font-size: 14px;
+                            font-weight: 200;
+                            
+                        }
+                        
+                    }
+                    input[type="submit"] {
+                        font-family: 'yekanbakhweb' !important;
+                        background-color: #cdb578;
+                        padding: 10px 15px;
+                        font-size: 15px;
+                        font-weight: 600;
+                        border-radius: 10px;
+                    }
+                    div{
+                        p{
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+            
+            
+        }
+
     }
 }
 .aboutPageBack{
@@ -956,6 +1117,7 @@ a{
         }
     }
 }
+
 .mainFooterBack{
     background-color: #1e1e1e;
     padding: 50px 20px;

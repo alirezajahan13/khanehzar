@@ -894,6 +894,169 @@ a {
   padding: 8px 18px;
   border-radius: 10px;
 }
+.homePageBack .mainHome .ourProject {
+  padding: 75px 0;
+  text-align: center;
+}
+.homePageBack .mainHome .ourProject h2 {
+  color: #cdb578;
+  font-size: 25px;
+  margin: 0;
+  font-weight: 800;
+}
+.homePageBack .mainHome .ourProject p {
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 100;
+}
+.homePageBack .mainHome .ourProject a {
+  text-align: left;
+  display: block;
+}
+.homePageBack .mainHome .ourProject svg {
+  fill: white;
+}
+.homePageBack .mainHome .ourProject .swiper-pagination {
+  position: unset !important;
+}
+.homePageBack .mainHome .ourProject .swiper-pagination span {
+  background: white;
+  opacity: 100%;
+}
+.homePageBack .mainHome .ourProject .swiper-pagination .swiper-pagination-bullet-active {
+  background: #cdb578;
+}
+.homePageBack .mainHome .ourProject .cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+.homePageBack .mainHome .ourProject .card {
+  width: 23%;
+  height: 400px;
+  position: relative;
+}
+.homePageBack .mainHome .ourProject .card img {
+  border-radius: 10px;
+}
+.homePageBack .mainHome .ourProject .card .text {
+  background: linear-gradient(rgba(19, 19, 19, 0.374), rgba(40, 40, 40, 0.92));
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.homePageBack .mainHome .ourProject .card .text h3 {
+  font-size: 25px;
+  font-weight: 500;
+}
+.homePageBack .mainHome .ourProject .card .text svg {
+  display: block;
+  text-align: right;
+  margin: 10px;
+  border: 3px solid white;
+  border-radius: 50%;
+  padding: 7px;
+  transform: rotate(-45deg);
+}
+.homePageBack .mainHome .request {
+  padding: 75px 0;
+  text-align: center;
+}
+.homePageBack .mainHome .request h2 {
+  color: #cdb578;
+  font-size: 25px;
+  margin: 0;
+  font-weight: 800;
+}
+.homePageBack .mainHome .request p {
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 100;
+}
+.homePageBack .mainHome .request .main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.homePageBack .mainHome .request .main .form {
+  width: 40%;
+}
+.homePageBack .mainHome .request .main .formRequest {
+  text-align: right;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.homePageBack .mainHome .request .main .formRequest h4 {
+  font-weight: 400;
+  margin: 0;
+}
+.homePageBack .mainHome .request .main .formRequest p {
+  margin: 10px 0 40px 0;
+  width: 90%;
+}
+.homePageBack .mainHome .request .main .formRequest input:focus {
+  outline: none;
+}
+.homePageBack .mainHome .request .main .formRequest input[type=text] {
+  width: 100%;
+  color: white;
+  background-color: #282828;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  padding: 8px 0;
+}
+.homePageBack .mainHome .request .main .formRequest input[type=text]::-moz-placeholder {
+  color: white;
+  font-size: 14px;
+  font-weight: 200;
+  font-family: "yekanbakhweb" !important;
+}
+.homePageBack .mainHome .request .main .formRequest input[type=text]::placeholder {
+  color: white;
+  font-size: 14px;
+  font-weight: 200;
+  font-family: "yekanbakhweb" !important;
+}
+.homePageBack .mainHome .request .main .formRequest input[type=email] {
+  width: 100%;
+  color: white;
+  background-color: #282828;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  direction: rtl;
+  padding: 8px 0;
+  font-family: "yekanbakhweb" !important;
+}
+.homePageBack .mainHome .request .main .formRequest input[type=email]::-moz-placeholder {
+  color: white;
+  font-size: 14px;
+  font-weight: 200;
+}
+.homePageBack .mainHome .request .main .formRequest input[type=email]::placeholder {
+  color: white;
+  font-size: 14px;
+  font-weight: 200;
+}
+.homePageBack .mainHome .request .main .formRequest input[type=submit] {
+  font-family: "yekanbakhweb" !important;
+  background-color: #cdb578;
+  padding: 10px 15px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+.homePageBack .mainHome .request .main .formRequest div p {
+  text-align: right;
+}
 
 .aboutPageBack .mainView {
   max-width: 1280px;
