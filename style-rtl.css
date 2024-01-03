@@ -1230,6 +1230,76 @@ a {
   font-size: 20px;
 }
 
+.projectPageBack .mainView {
+  max-width: 1280px;
+  margin: auto;
+  color: white;
+}
+.projectPageBack .mainView .singleBox {
+  max-width: 1100px;
+  margin: auto;
+}
+.projectPageBack .mainView .singleBox .mahtabproject {
+  text-align: center;
+  margin: 50px 0;
+}
+.projectPageBack .mainView .singleBox .mahtabproject .swiper-pagination {
+  position: unset !important;
+}
+.projectPageBack .mainView .singleBox .mahtabproject .swiper-pagination span {
+  background: white;
+  opacity: 100%;
+}
+.projectPageBack .mainView .singleBox .mahtabproject .swiper-pagination .swiper-pagination-bullet-active {
+  background: #cdb578;
+}
+.projectPageBack .mainView .singleBox .mahtabproject .projetSwiperImg {
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.projectPageBack .mainView .singleBox .mahtabproject .projetSwiperImg img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.projectPageBack .mainView .singleBox .mahtabproject h1 {
+  color: #cdb578;
+}
+.projectPageBack .mainView .singleBox .descriptionProjectnOne h2 {
+  color: #cdb578;
+  font-size: 20px;
+}
+.projectPageBack .mainView .singleBox .descriptionProjectTwo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.projectPageBack .mainView .singleBox .descriptionProjectTwo .descriptionProjectClip {
+  width: 64%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.projectPageBack .mainView .singleBox .descriptionProjectTwo .descriptionProjectClip img {
+  display: block;
+}
+.projectPageBack .mainView .singleBox .descriptionProjectTwo .descriptionProjectText h2 {
+  color: #cdb578;
+  margin: 0;
+}
+.projectPageBack .mainView .singleBox .descriptionProjectTwo .descriptionProjectText h3 {
+  font-weight: 500;
+  font-size: 18px;
+  margin: 10px 0;
+}
+.projectPageBack .mainView .singleBox .descriptionProjectTwo .descriptionProjectText div {
+  margin: 22px 0;
+}
+.projectPageBack .mainView .singleBox .descriptionProjectTwo .descriptionProjectText div p {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0;
+}
+
 .mainFooterBack {
   background-color: #1e1e1e;
   padding: 50px 20px;
