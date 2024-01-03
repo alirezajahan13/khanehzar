@@ -212,7 +212,7 @@ get_header();
         </div>
         <div class="ourProject">
             <h2>پروژه های ما</h2>
-            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+            <span>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</span>
             <a href="#">موارد بیشتر ></a>
             <div class="swiper projectSwiper">
                 <div class="cards swiper-wrapper">
@@ -300,7 +300,7 @@ get_header();
         </div>
         <div class="request">
             <h2>پروژه های ما</h2>
-            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+            <span>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</span>
             <div class="main">
                 <div class="form">
                     <?php echo do_shortcode('[contact-form-7 id="554d9f0" title="درخواست"]') ?>

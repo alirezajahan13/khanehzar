@@ -732,11 +732,11 @@ a{
         color: white;
         max-width: 1280px;
         margin: auto;
-        .holdingZar{
+        .mainHomeIntroSectionParent{
             display: flex;
             justify-content: space-between;
             align-items: center;
-            .title{
+            .mainHomeIntroInnerTitle{
               width: 35%;
               text-align: right;
               h2{
@@ -747,18 +747,34 @@ a{
                 color: #cdb578;
                 display: block;
               }
-              a{
-                margin-left: 15px;
-                padding: 5px 10px;
-                // font-size: 18px;
-              }
-              a.readMore{
+              .holdingZarButtom{
+                display: flex;
+                
+                .readMore{
                 background-color: #cdb578;
                 color: black;
                 border-radius: 7px;
+                
+                }
+                div{
+                margin-left: 15px;
+                padding: 5px 10px;
+                display: flex;
+                align-items: center;
+                span{
+                    display: flex;
+                    align-items: center;
+                    margin-right: 5px;
+                    transition: .3s;
+                }
+                &:hover span{
+                    transform: translateX(-7px);
+                }
+                }
               }
+              
             }
-            .img{
+            .mainHomeIntroInnerImg{
               width: 62%;
               position: relative;
               .counterNumbersInner{
@@ -790,16 +806,19 @@ a{
         .ourServices{
             padding: 150px 0;
             text-align: center;
+            .serviceSwiper {
+                margin-top: 50px;
+            }
             h2{
                 color: #cdb578;
                 font-size: 25px;
                 margin: 0;
                 font-weight: 800;
             }
-            p{
+            span{
                 font-size: 13px;
                 text-align: center;
-                margin-bottom: 50px;
+                margin-bottom: 50px !important;
                 font-weight: 100;
             }
             .swiper-pagination{
@@ -865,8 +884,15 @@ a{
                     border: 1px solid white;
                     padding: 8px 18px;
                     border-radius: 10px;
-                    
+                    svg{
+                        vertical-align: middle;
+                        transition: .3s;
+                    }
+                    &:hover svg{
+                        transform: translateX(-7px);
+                    }
                 }
+                
             }
         }
         .ourProject{
@@ -878,7 +904,7 @@ a{
                 margin: 0;
                 font-weight: 800;
             }
-            p{
+            span{
                 font-size: 13px;
                 text-align: center;
                 margin-bottom: 50px;
@@ -983,7 +1009,7 @@ a{
                 margin: 0;
                 font-weight: 800;
             }
-            p{
+            span{
                 font-size: 13px;
                 text-align: center;
                 margin-bottom: 50px;

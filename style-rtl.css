@@ -766,33 +766,47 @@ a {
   max-width: 1280px;
   margin: auto;
 }
-.homePageBack .mainHome .holdingZar {
+.homePageBack .mainHome .mainHomeIntroSectionParent {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.homePageBack .mainHome .holdingZar .title {
+.homePageBack .mainHome .mainHomeIntroSectionParent .mainHomeIntroInnerTitle {
   width: 35%;
   text-align: right;
 }
-.homePageBack .mainHome .holdingZar .title h2 {
+.homePageBack .mainHome .mainHomeIntroSectionParent .mainHomeIntroInnerTitle h2 {
   font-size: 40px;
   margin-bottom: 0;
 }
-.homePageBack .mainHome .holdingZar .title span {
+.homePageBack .mainHome .mainHomeIntroSectionParent .mainHomeIntroInnerTitle span {
   color: #cdb578;
   display: block;
 }
-.homePageBack .mainHome .holdingZar .title a {
-  margin-left: 15px;
-  padding: 5px 10px;
+.homePageBack .mainHome .mainHomeIntroSectionParent .mainHomeIntroInnerTitle .holdingZarButtom {
+  display: flex;
 }
-.homePageBack .mainHome .holdingZar .title a.readMore {
+.homePageBack .mainHome .mainHomeIntroSectionParent .mainHomeIntroInnerTitle .holdingZarButtom .readMore {
   background-color: #cdb578;
   color: black;
   border-radius: 7px;
 }
-.homePageBack .mainHome .holdingZar .img {
+.homePageBack .mainHome .mainHomeIntroSectionParent .mainHomeIntroInnerTitle .holdingZarButtom div {
+  margin-left: 15px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+}
+.homePageBack .mainHome .mainHomeIntroSectionParent .mainHomeIntroInnerTitle .holdingZarButtom div span {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  transition: 0.3s;
+}
+.homePageBack .mainHome .mainHomeIntroSectionParent .mainHomeIntroInnerTitle .holdingZarButtom div:hover span {
+  transform: translateX(-7px);
+}
+.homePageBack .mainHome .mainHomeIntroSectionParent .mainHomeIntroInnerImg {
   width: 62%;
   position: relative;
 }
@@ -804,9 +818,9 @@ a {
   position: absolute;
   bottom: 8px;
   width: 100%;
-  background: liner-gradient(rgba(0, 0, 0, 0.42), rgba(255, 255, 255, 0.22)) !important;
-  -webkit-backdrop-filter: blur(60.6804px);
-          backdrop-filter: blur(60.6804px);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .homePageBack .mainHome .holdingZar .img .counterNumbersInner .counterItem {
   padding: 15px 0;
@@ -825,16 +839,19 @@ a {
   padding: 150px 0;
   text-align: center;
 }
+.homePageBack .mainHome .ourServices .serviceSwiper {
+  margin-top: 50px;
+}
 .homePageBack .mainHome .ourServices h2 {
   color: #cdb578;
   font-size: 25px;
   margin: 0;
   font-weight: 800;
 }
-.homePageBack .mainHome .ourServices p {
+.homePageBack .mainHome .ourServices span {
   font-size: 13px;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 50px !important;
   font-weight: 100;
 }
 .homePageBack .mainHome .ourServices .swiper-pagination {
@@ -902,6 +919,13 @@ a {
   padding: 8px 18px;
   border-radius: 10px;
 }
+.homePageBack .mainHome .holdingServices .text a svg {
+  vertical-align: middle;
+  transition: 0.3s;
+}
+.homePageBack .mainHome .holdingServices .text a:hover svg {
+  transform: translateX(-7px);
+}
 .homePageBack .mainHome .ourProject {
   padding: 75px 0;
   text-align: center;
@@ -912,7 +936,7 @@ a {
   margin: 0;
   font-weight: 800;
 }
-.homePageBack .mainHome .ourProject p {
+.homePageBack .mainHome .ourProject span {
   font-size: 13px;
   text-align: center;
   margin-bottom: 50px;
@@ -1014,7 +1038,7 @@ a {
   margin: 0;
   font-weight: 800;
 }
-.homePageBack .mainHome .request p {
+.homePageBack .mainHome .request span {
   font-size: 13px;
   text-align: center;
   margin-bottom: 50px;
