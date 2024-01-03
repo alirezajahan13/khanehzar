@@ -698,7 +698,6 @@ a {
 }
 
 .mainHeaderBack {
-  background-color: #282828;
   color: white;
 }
 .mainHeaderBack .mainHeader {
@@ -762,9 +761,6 @@ a {
   max-width: 1280px;
   margin: auto;
 }
-.homePageBack {
-  background-color: #282828;
-}
 .homePageBack .mainHome {
   color: white;
   max-width: 1280px;
@@ -801,15 +797,16 @@ a {
   position: relative;
 }
 .homePageBack .mainHome .holdingZar .img .row {
+  border-radius: 0 10px 10px 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
   position: absolute;
-  bottom: 9px;
+  bottom: 8px;
   width: 100%;
-  background-color: rgba(63, 63, 63, 0.6);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  background: liner-gradient(rgba(0, 0, 0, 0.42), rgba(255, 255, 255, 0.22)) !important;
+  -webkit-backdrop-filter: blur(60.6804px);
+          backdrop-filter: blur(60.6804px);
 }
 .homePageBack .mainHome .holdingZar .img .row div {
   padding: 15px 0;
@@ -859,7 +856,7 @@ a {
 .homePageBack .mainHome .ourServices .cards .card {
   width: 23%;
   height: auto;
-  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 0.484);
   border-radius: 10px;
   background-image: linear-gradient(rgba(19, 19, 19, 0.651), rgb(40, 40, 40));
   padding: 50px 0;
@@ -873,7 +870,7 @@ a {
 }
 .homePageBack .mainHome .ourServices .cards .card p {
   margin: 0;
-  padding: 0 20px;
+  padding: 0 30px;
 }
 .homePageBack .mainHome .holdingServices {
   display: flex;
@@ -925,9 +922,6 @@ a {
   text-align: left;
   display: block;
 }
-.homePageBack .mainHome .ourProject svg {
-  fill: white;
-}
 .homePageBack .mainHome .ourProject .swiper-pagination {
   position: unset !important;
 }
@@ -942,23 +936,36 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px 0;
+  padding: 20px 0;
+  margin-top: 10px;
 }
 .homePageBack .mainHome .ourProject .card {
   width: 23%;
   height: 400px;
   position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.homePageBack .mainHome .ourProject .card:hover .gradient {
+  top: 40% !important;
+}
+.homePageBack .mainHome .ourProject .card:hover {
+  transform: translateY(-20px);
+}
+.homePageBack .mainHome .ourProject .card:hover .svgOne {
+  visibility: hidden;
+  opacity: 0% !important;
+}
+.homePageBack .mainHome .ourProject .card:hover .svgTwo {
+  visibility: visible !important;
+  opacity: 100% !important;
 }
 .homePageBack .mainHome .ourProject .card img {
-  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .homePageBack .mainHome .ourProject .card .text {
-  background: linear-gradient(rgba(19, 19, 19, 0.374), rgba(40, 40, 40, 0.92));
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0%;
-  right: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -967,14 +974,35 @@ a {
   font-size: 25px;
   font-weight: 500;
 }
-.homePageBack .mainHome .ourProject .card .text svg {
-  display: block;
-  text-align: right;
-  margin: 10px;
-  border: 3px solid white;
-  border-radius: 50%;
-  padding: 7px;
-  transform: rotate(-45deg);
+.homePageBack .mainHome .ourProject .card .text span {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.homePageBack .mainHome .ourProject .card .text span .svgTwo {
+  opacity: 0%;
+  visibility: hidden;
+  transition: 0.3s;
+  transform: translateX(45px);
+}
+.homePageBack .mainHome .ourProject .card .text span .svgOne {
+  opacity: 100%;
+  transition: 0.3s;
+}
+.homePageBack .mainHome .ourProject .card .text .gradient {
+  width: 100%;
+  height: 70%;
+  position: absolute;
+  top: 60%;
+  right: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: 0.3s !important;
+}
+.homePageBack .mainHome .ourProject .card .text .gradient p {
+  padding: 0 20px;
 }
 .homePageBack .mainHome .request {
   padding: 75px 0;
@@ -1020,7 +1048,7 @@ a {
 .homePageBack .mainHome .request .main .formRequest input[type=text] {
   width: 100%;
   color: white;
-  background-color: #282828;
+  background: transparent;
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
   padding: 8px 0;
@@ -1045,6 +1073,7 @@ a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
   direction: rtl;
   padding: 8px 0;
+  background: transparent;
   font-family: "yekanbakhweb" !important;
 }
 .homePageBack .mainHome .request .main .formRequest input[type=email]::-moz-placeholder {
@@ -1168,15 +1197,21 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.mainArchiveGridWrapper img {
-  width: 100%;
-}
 .mainArchiveGridWrapper a {
+  margin: 12px 0;
+  border-radius: 10PX;
+  overflow: hidden;
   width: 39%;
+  height: 300px;
+  color: white;
   position: relative;
 }
 .mainArchiveGridWrapper a:nth-child(4n), .mainArchiveGridWrapper a:nth-child(1), .mainArchiveGridWrapper a:nth-child(4n+1) {
   width: 59%;
+}
+.mainArchiveGridWrapper a img {
+  width: 100%;
+  height: 100%;
 }
 .mainArchiveGridWrapper a .projectCard {
   width: 100%;
@@ -1190,6 +1225,11 @@ a {
   align-items: flex-end;
   color: w;
 }
+.mainArchiveGridWrapper a .projectCard h4 {
+  margin: 20px;
+  font-size: 20px;
+}
+
 .mainFooterBack {
   background-color: #1e1e1e;
   padding: 50px 20px;

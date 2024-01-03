@@ -658,7 +658,6 @@ a{
     text-decoration: none;
 }
 .mainHeaderBack{
-    background-color: #282828;
     color: white;
     .mainHeader{
         display: flex;
@@ -729,7 +728,6 @@ a{
     }
 }
 .homePageBack{
-    background-color: #282828;
     .mainHome{ 
         color: white;
         max-width: 1280px;
@@ -764,14 +762,15 @@ a{
               width: 62%;
               position: relative;
               .row{
+                border-radius: 0 10px 10px 0;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
                 position: absolute;
-                bottom: 9px;
+                bottom: 8px;
                 width: 100%;
-                background-color: rgba(63, 63, 63, 0.6);
-                backdrop-filter: blur(5px);
+                background:liner-gradient(rgba(0,0,0,0.42),rgba(255,255,255,0.22)) !important;
+                backdrop-filter: blur(60.6804px);
                 div{
                     padding: 15px 0;
                 }
@@ -821,21 +820,21 @@ a{
             .card{
                 width: 23%;
                 height: auto;
-                border: 1px solid white ;
+                border: 1px solid rgba(255, 255, 255, 0.484) ;
                 border-radius: 10px;
                 background-image: linear-gradient(rgba(19, 19, 19, 0.651), rgb(40, 40, 40));
                 padding: 50px 0;
                 path,circle{
                     fill: #cdb578;
                    }
-                    h3{
-                        font-size: 16px;
-                        font-weight: 600;
-                    }
-                    p{
-                        margin: 0;
-                        padding: 0 20px;
-                    }
+                h3{
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+                p{
+                    margin: 0;
+                    padding: 0 30px;
+                }
                 }
             }
         }
@@ -889,9 +888,6 @@ a{
                 text-align: left;
                 display: block;
             }
-            svg{
-                fill: white;
-            }
             .swiper-pagination{
                 position: unset !important;
                 span{
@@ -906,23 +902,35 @@ a{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                margin: 20px 0;
-                
+                padding: 20px 0;
+                margin-top: 10px;
             }
             .card{
                 width: 23%;
                 height: 400px;
                 position: relative;
+                border-radius: 10px;
+                overflow: hidden;
+                transition: .3s; 
+                &:hover .gradient {
+                    top: 40% !important;
+
+                }
+                &:hover {
+                    transform: translateY(-20px);
+                    .svgOne{
+                        visibility: hidden;
+                        opacity: 0% !important;
+                    }
+                    .svgTwo{
+                        visibility: visible !important;
+                        opacity: 100% !important;
+                    }
+                }
                 img{
-                    border-radius: 10px;
+                    object-fit: cover;
                 }
                 .text{
-                    background: linear-gradient(rgba(19, 19, 19, 0.374),rgba(40, 40, 40, 0.92));
-                    width: 100%;
-                    height: 100%;
-                    position: absolute;
-                    top: 0%;
-                    right: 0;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
@@ -930,14 +938,37 @@ a{
                         font-size: 25px;
                         font-weight: 500;
                     }
-                    svg{
-                        display: block;
-                        text-align: right;
-                        margin: 10px;
-                        border: 3px solid white;
-                        border-radius: 50%;
-                        padding: 7px;
-                        transform: rotate(-45deg);
+                    span{
+                        position: absolute;
+                        // display: flex;
+                        top: 10px;
+                        right: 10px;
+                        .svgTwo{
+                            opacity: 0%;
+                            visibility: hidden;
+                            transition: .3s;
+                            transform: translateX(45px);
+                        }
+                        .svgOne{
+                            opacity: 100%;
+                            transition: .3s;
+                        }
+                    }
+                    .gradient{
+                        width: 100%;
+                        height: 70%;
+                        position: absolute;
+                        top: 60%;
+                        right: 0;
+                        background: linear-gradient(rgba(0, 0, 0, 0),rgb(0, 0, 0));
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        transition: .3s !important;
+                        p{
+                            padding: 0 20px;
+                        }
+                        
                     }
                 }
             }
@@ -984,7 +1015,7 @@ a{
                     input[type="text"] {
                         width: 100%;
                         color: white;
-                        background-color: #282828;
+                        background: transparent;
                         border: none;
                         border-bottom: 1px solid rgba(255, 255, 255, 0.6);
                         padding: 8px 0;
@@ -1003,6 +1034,7 @@ a{
                         border-bottom: 1px solid rgba(255, 255, 255, 0.6);
                         direction: rtl;
                         padding: 8px 0;
+                        background: transparent;
                         font-family: 'yekanbakhweb' !important;
                         &::placeholder{
                             color: white;
@@ -1138,13 +1170,21 @@ a{
     // display: grid;
     // grid-template-columns: auto auto ;
     // gap: 20px;
-    img{
-        width: 100%;
-    }
-    a{
+    
+    a{  
+        margin: 12px 0;
+        border-radius: 10PX;
+        overflow: hidden;
         width: 39%;
+        height: 300px;
+        color: white;
+        
         &:nth-child(4n),&:nth-child(1),&:nth-child(4n+1){
             width: 59%;
+        }
+        img{
+            width: 100%;
+            height: 100%;
         }
         position: relative;
         .projectCard{
@@ -1159,7 +1199,8 @@ a{
             align-items: flex-end;
             color: w;
             h4{
-                
+              margin: 20px; 
+              font-size: 20px; 
             }
         }
     }

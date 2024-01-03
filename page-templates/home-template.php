@@ -199,45 +199,81 @@ get_header();
             <div class="swiper projectSwiper">
                 <div class="cards swiper-wrapper">
                     <div class="card swiper-slide">
-                        <img src="<?php echo get_template_directory_uri() ?>/img/home.jpg" alt="" height="400px" width="100%">
+                        <img src="<?php echo get_template_directory_uri() ?>/img/MG_0238-min-scaled.jpg" alt="" height="400px" width="100%">
                         <div class="text">
-                        <svg width="40" height="40" viewBox="-64 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M365.52 209.85 59.22 67.01c-16.06-7.49-35.15-.54-42.64 15.52L3.01 111.61c-7.49 16.06-.54 35.15 15.52 42.64L236.96 256.1 18.49 357.99C2.47 365.46-4.46 384.5 3.01 400.52l13.52 29C24 445.54 43.04 452.47 59.06 445l306.47-142.91a32.003 32.003 0 0 0 18.48-29v-34.23c-.01-12.45-7.21-23.76-18.49-29.01z"/></svg>
-                        <h3>پروژه پرواز</h3>
+                            <span class="homeInnerProjectCard">
+                                <svg class="svgOne" width="40" height="40" viewBox="12 12 45 45" fill="none" xmlns="http://www.w3.org/2000/svg"><path  d="m27.96 32.274 7.485-.936a2.041 2.041 0 0 1 2.29 1.925l.38 7.548M19.04 21.309c7.237-8.641 20.098-9.766 28.726-2.513 8.627 7.253 9.754 20.139 2.517 28.78-7.236 8.641-20.097 9.766-28.725 2.513-8.627-7.253-9.754-20.138-2.518-28.78Z" stroke="#EEE" stroke-width="3.061" stroke-linecap="round"/></svg>
+                                <svg class="svgTwo" width="40" height="40" viewBox="11.5 11 37 37" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M44.288 41.123c6.468-7.717 5.46-19.225-2.249-25.702-7.71-6.478-19.202-5.472-25.67 2.246-6.467 7.717-5.46 19.225 2.249 25.702 7.71 6.477 19.202 5.472 25.67-2.246ZM31.198 27.98a.456.456 0 0 1 .51.43l.34 6.74a1.368 1.368 0 1 0 2.73-.137l-.34-6.74a3.19 3.19 0 0 0-3.58-3.008l-6.689.835a1.367 1.367 0 0 0 .34 2.716l6.688-.836Z" fill="#EEE"/></svg>
+                            </span>
+                            <div class="gradient">
+                            <h3>پروژه پرواز</h3>
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و گرافیک است چاپگر ها و متون بلکه روزنامه است</p>
+                            </div>
                         </div>
                     </div>
                     <div class="card swiper-slide">
-                        <img src="<?php echo get_template_directory_uri() ?>/img/home.jpg" alt="" height="400px" width="100%">
+                        <img src="<?php echo get_template_directory_uri() ?>/img/SOH_7606-3-1-scaled.jpg" alt="" height="400px" width="100%">
                         <div class="text">
-                        <svg width="40" height="40" viewBox="-64 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M365.52 209.85 59.22 67.01c-16.06-7.49-35.15-.54-42.64 15.52L3.01 111.61c-7.49 16.06-.54 35.15 15.52 42.64L236.96 256.1 18.49 357.99C2.47 365.46-4.46 384.5 3.01 400.52l13.52 29C24 445.54 43.04 452.47 59.06 445l306.47-142.91a32.003 32.003 0 0 0 18.48-29v-34.23c-.01-12.45-7.21-23.76-18.49-29.01z"/></svg>
-                        <h3>پروژه پرواز</h3>
+                            <span class="homeInnerProjectCard">
+                                <svg class="svgOne" width="40" height="40" viewBox="12 12 45 45" fill="none" xmlns="http://www.w3.org/2000/svg"><path  d="m27.96 32.274 7.485-.936a2.041 2.041 0 0 1 2.29 1.925l.38 7.548M19.04 21.309c7.237-8.641 20.098-9.766 28.726-2.513 8.627 7.253 9.754 20.139 2.517 28.78-7.236 8.641-20.097 9.766-28.725 2.513-8.627-7.253-9.754-20.138-2.518-28.78Z" stroke="#EEE" stroke-width="3.061" stroke-linecap="round"/></svg>
+                                <svg class="svgTwo" width="40" height="40" viewBox="11.5 11 37 37" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M44.288 41.123c6.468-7.717 5.46-19.225-2.249-25.702-7.71-6.478-19.202-5.472-25.67 2.246-6.467 7.717-5.46 19.225 2.249 25.702 7.71 6.477 19.202 5.472 25.67-2.246ZM31.198 27.98a.456.456 0 0 1 .51.43l.34 6.74a1.368 1.368 0 1 0 2.73-.137l-.34-6.74a3.19 3.19 0 0 0-3.58-3.008l-6.689.835a1.367 1.367 0 0 0 .34 2.716l6.688-.836Z" fill="#EEE"/></svg>
+                            </span>
+                            <div class="gradient">
+                            <h3>پروژه پرواز</h3>
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و گرافیک است چاپگر ها و متون بلکه روزنامه است</p>
+                            </div>
                         </div>
                     </div>
                     <div class="card swiper-slide">
-                        <img src="<?php echo get_template_directory_uri() ?>/img/home.jpg" alt="" height="400px" width="100%">
+                        <img src="<?php echo get_template_directory_uri() ?>/img/MG_0238-min-scaled.jpg" alt="" height="400px" width="100%">
                         <div class="text">
-                        <svg width="40" height="40" viewBox="-64 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M365.52 209.85 59.22 67.01c-16.06-7.49-35.15-.54-42.64 15.52L3.01 111.61c-7.49 16.06-.54 35.15 15.52 42.64L236.96 256.1 18.49 357.99C2.47 365.46-4.46 384.5 3.01 400.52l13.52 29C24 445.54 43.04 452.47 59.06 445l306.47-142.91a32.003 32.003 0 0 0 18.48-29v-34.23c-.01-12.45-7.21-23.76-18.49-29.01z"/></svg>
-                        <h3>پروژه پرواز</h3>
+                            <span class="homeInnerProjectCard">
+                                <svg class="svgOne" width="40" height="40" viewBox="12 12 45 45" fill="none" xmlns="http://www.w3.org/2000/svg"><path  d="m27.96 32.274 7.485-.936a2.041 2.041 0 0 1 2.29 1.925l.38 7.548M19.04 21.309c7.237-8.641 20.098-9.766 28.726-2.513 8.627 7.253 9.754 20.139 2.517 28.78-7.236 8.641-20.097 9.766-28.725 2.513-8.627-7.253-9.754-20.138-2.518-28.78Z" stroke="#EEE" stroke-width="3.061" stroke-linecap="round"/></svg>
+                                <svg class="svgTwo" width="40" height="40" viewBox="11.5 11 37 37" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M44.288 41.123c6.468-7.717 5.46-19.225-2.249-25.702-7.71-6.478-19.202-5.472-25.67 2.246-6.467 7.717-5.46 19.225 2.249 25.702 7.71 6.477 19.202 5.472 25.67-2.246ZM31.198 27.98a.456.456 0 0 1 .51.43l.34 6.74a1.368 1.368 0 1 0 2.73-.137l-.34-6.74a3.19 3.19 0 0 0-3.58-3.008l-6.689.835a1.367 1.367 0 0 0 .34 2.716l6.688-.836Z" fill="#EEE"/></svg>
+                            </span>
+                            <div class="gradient">
+                            <h3>پروژه پرواز</h3>
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و گرافیک است چاپگر ها و متون بلکه روزنامه است</p>
+                            </div>
                         </div>
                     </div>
                     <div class="card swiper-slide">
-                        <img src="<?php echo get_template_directory_uri() ?>/img/home.jpg" alt="" height="400px" width="100%">
+                        <img src="<?php echo get_template_directory_uri() ?>/img/SOH_7606-3-1-scaled.jpg" alt="" height="400px" width="100%">
                         <div class="text">
-                        <svg width="40" height="40" viewBox="-64 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M365.52 209.85 59.22 67.01c-16.06-7.49-35.15-.54-42.64 15.52L3.01 111.61c-7.49 16.06-.54 35.15 15.52 42.64L236.96 256.1 18.49 357.99C2.47 365.46-4.46 384.5 3.01 400.52l13.52 29C24 445.54 43.04 452.47 59.06 445l306.47-142.91a32.003 32.003 0 0 0 18.48-29v-34.23c-.01-12.45-7.21-23.76-18.49-29.01z"/></svg>
-                        <h3>پروژه پرواز</h3>
+                            <span class="homeInnerProjectCard">
+                                <svg class="svgOne" width="40" height="40" viewBox="12 12 45 45" fill="none" xmlns="http://www.w3.org/2000/svg"><path  d="m27.96 32.274 7.485-.936a2.041 2.041 0 0 1 2.29 1.925l.38 7.548M19.04 21.309c7.237-8.641 20.098-9.766 28.726-2.513 8.627 7.253 9.754 20.139 2.517 28.78-7.236 8.641-20.097 9.766-28.725 2.513-8.627-7.253-9.754-20.138-2.518-28.78Z" stroke="#EEE" stroke-width="3.061" stroke-linecap="round"/></svg>
+                                <svg class="svgTwo" width="40" height="40" viewBox="11.5 11 37 37" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M44.288 41.123c6.468-7.717 5.46-19.225-2.249-25.702-7.71-6.478-19.202-5.472-25.67 2.246-6.467 7.717-5.46 19.225 2.249 25.702 7.71 6.477 19.202 5.472 25.67-2.246ZM31.198 27.98a.456.456 0 0 1 .51.43l.34 6.74a1.368 1.368 0 1 0 2.73-.137l-.34-6.74a3.19 3.19 0 0 0-3.58-3.008l-6.689.835a1.367 1.367 0 0 0 .34 2.716l6.688-.836Z" fill="#EEE"/></svg>
+                            </span>
+                            <div class="gradient">
+                            <h3>پروژه پرواز</h3>
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و گرافیک است چاپگر ها و متون بلکه روزنامه است</p>
+                            </div>
                         </div>
                     </div>
                     <div class="card swiper-slide">
-                        <img src="<?php echo get_template_directory_uri() ?>/img/home.jpg" alt="" height="400px" width="100%">
+                        <img src="<?php echo get_template_directory_uri() ?>/img/MG_0238-min-scaled.jpg" alt="" height="400px" width="100%">
                         <div class="text">
-                        <svg width="40" height="40" viewBox="-64 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M365.52 209.85 59.22 67.01c-16.06-7.49-35.15-.54-42.64 15.52L3.01 111.61c-7.49 16.06-.54 35.15 15.52 42.64L236.96 256.1 18.49 357.99C2.47 365.46-4.46 384.5 3.01 400.52l13.52 29C24 445.54 43.04 452.47 59.06 445l306.47-142.91a32.003 32.003 0 0 0 18.48-29v-34.23c-.01-12.45-7.21-23.76-18.49-29.01z"/></svg>
-                        <h3>پروژه پرواز</h3>
+                            <span class="homeInnerProjectCard">
+                                <svg class="svgOne" width="40" height="40" viewBox="12 12 45 45" fill="none" xmlns="http://www.w3.org/2000/svg"><path  d="m27.96 32.274 7.485-.936a2.041 2.041 0 0 1 2.29 1.925l.38 7.548M19.04 21.309c7.237-8.641 20.098-9.766 28.726-2.513 8.627 7.253 9.754 20.139 2.517 28.78-7.236 8.641-20.097 9.766-28.725 2.513-8.627-7.253-9.754-20.138-2.518-28.78Z" stroke="#EEE" stroke-width="3.061" stroke-linecap="round"/></svg>
+                                <svg class="svgTwo" width="40" height="40" viewBox="11.5 11 37 37" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M44.288 41.123c6.468-7.717 5.46-19.225-2.249-25.702-7.71-6.478-19.202-5.472-25.67 2.246-6.467 7.717-5.46 19.225 2.249 25.702 7.71 6.477 19.202 5.472 25.67-2.246ZM31.198 27.98a.456.456 0 0 1 .51.43l.34 6.74a1.368 1.368 0 1 0 2.73-.137l-.34-6.74a3.19 3.19 0 0 0-3.58-3.008l-6.689.835a1.367 1.367 0 0 0 .34 2.716l6.688-.836Z" fill="#EEE"/></svg>
+                            </span>
+                            <div class="gradient">
+                            <h3>پروژه پرواز</h3>
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و گرافیک است چاپگر ها و متون بلکه روزنامه است</p>
+                            </div>
                         </div>
                     </div>
                     <div class="card swiper-slide">
-                        <img src="<?php echo get_template_directory_uri() ?>/img/home.jpg" alt="" height="400px" width="100%">
+                        <img src="<?php echo get_template_directory_uri() ?>/img/SOH_7606-3-1-scaled.jpg" alt="" height="400px" width="100%">
                         <div class="text">
-                        <svg width="40" height="40" viewBox="-64 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M365.52 209.85 59.22 67.01c-16.06-7.49-35.15-.54-42.64 15.52L3.01 111.61c-7.49 16.06-.54 35.15 15.52 42.64L236.96 256.1 18.49 357.99C2.47 365.46-4.46 384.5 3.01 400.52l13.52 29C24 445.54 43.04 452.47 59.06 445l306.47-142.91a32.003 32.003 0 0 0 18.48-29v-34.23c-.01-12.45-7.21-23.76-18.49-29.01z"/></svg>
-                        <h3>پروژه پرواز</h3>
+                            <span class="homeInnerProjectCard">
+                                <svg class="svgOne" width="40" height="40" viewBox="12 12 45 45" fill="none" xmlns="http://www.w3.org/2000/svg"><path  d="m27.96 32.274 7.485-.936a2.041 2.041 0 0 1 2.29 1.925l.38 7.548M19.04 21.309c7.237-8.641 20.098-9.766 28.726-2.513 8.627 7.253 9.754 20.139 2.517 28.78-7.236 8.641-20.097 9.766-28.725 2.513-8.627-7.253-9.754-20.138-2.518-28.78Z" stroke="#EEE" stroke-width="3.061" stroke-linecap="round"/></svg>
+                                <svg class="svgTwo" width="40" height="40" viewBox="11.5 11 37 37" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M44.288 41.123c6.468-7.717 5.46-19.225-2.249-25.702-7.71-6.478-19.202-5.472-25.67 2.246-6.467 7.717-5.46 19.225 2.249 25.702 7.71 6.477 19.202 5.472 25.67-2.246ZM31.198 27.98a.456.456 0 0 1 .51.43l.34 6.74a1.368 1.368 0 1 0 2.73-.137l-.34-6.74a3.19 3.19 0 0 0-3.58-3.008l-6.689.835a1.367 1.367 0 0 0 .34 2.716l6.688-.836Z" fill="#EEE"/></svg>
+                            </span>
+                            <div class="gradient">
+                            <h3>پروژه پرواز</h3>
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و گرافیک است چاپگر ها و متون بلکه روزنامه است</p>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -251,7 +287,7 @@ get_header();
                 <div class="form">
                     <?php echo do_shortcode('[contact-form-7 id="554d9f0" title="درخواست"]') ?>
                 </div>
-                <img src="https://dummyimage.com/620x620/000/fff" alt="">
+                <img src="<?php echo get_template_directory_uri() ?>/img/ou9.png">
             </div>
         </div>
     </div>
