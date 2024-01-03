@@ -761,7 +761,7 @@ a{
             .img{
               width: 62%;
               position: relative;
-              .row{
+              .counterNumbersInner{
                 border-radius: 0 10px 10px 0;
                 display: flex;
                 justify-content: space-around;
@@ -771,17 +771,17 @@ a{
                 width: 100%;
                 background:liner-gradient(rgba(0,0,0,0.42),rgba(255,255,255,0.22)) !important;
                 backdrop-filter: blur(60.6804px);
-                div{
+                .counterItem{
                     padding: 15px 0;
                 }
-                h3{
+                .counterNumber{
                     text-align: center;
                   font-size: 33px;
                   font-weight: 900;
                   margin: 0;
                   color: #cdb578;
                 }
-                p{
+                .counterTitle{
                     margin: 0;
                 }
               }

@@ -796,7 +796,7 @@ a {
   width: 62%;
   position: relative;
 }
-.homePageBack .mainHome .holdingZar .img .row {
+.homePageBack .mainHome .holdingZar .img .counterNumbersInner {
   border-radius: 0 10px 10px 0;
   display: flex;
   justify-content: space-around;
@@ -808,17 +808,17 @@ a {
   -webkit-backdrop-filter: blur(60.6804px);
           backdrop-filter: blur(60.6804px);
 }
-.homePageBack .mainHome .holdingZar .img .row div {
+.homePageBack .mainHome .holdingZar .img .counterNumbersInner .counterItem {
   padding: 15px 0;
 }
-.homePageBack .mainHome .holdingZar .img .row h3 {
+.homePageBack .mainHome .holdingZar .img .counterNumbersInner .counterNumber {
   text-align: center;
   font-size: 33px;
   font-weight: 900;
   margin: 0;
   color: #cdb578;
 }
-.homePageBack .mainHome .holdingZar .img .row p {
+.homePageBack .mainHome .holdingZar .img .counterNumbersInner .counterTitle {
   margin: 0;
 }
 .homePageBack .mainHome .ourServices {
