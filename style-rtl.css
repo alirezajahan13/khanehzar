@@ -711,9 +711,15 @@ a {
   align-items: center;
 }
 .mainHeaderBack .mainHeader .menuSection ul li {
+  position: relative;
   list-style: none;
-  padding: 5px 10px;
+  padding: 5px 15px;
+  margin: 0 5px;
   font-weight: 600;
+  transition: 0.3s;
+}
+.mainHeaderBack .mainHeader .menuSection ul li:hover {
+  border-bottom: 1px solid #cdb578;
 }
 .mainHeaderBack .mainHeader .menuSection ul li ul {
   z-index: 100;
@@ -735,6 +741,8 @@ a {
 }
 .mainHeaderBack .mainHeader .menuSection ul li ul li {
   border-bottom: 1px solid black;
+  margin: 0;
+  padding: 5px;
 }
 .mainHeaderBack .mainHeader .menuSection ul li ul li a {
   font-weight: 300;
@@ -770,6 +778,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .homePageBack .mainHome .mainHomeIntroSectionParent .mainHomeIntroInnerTitle {
   width: 35%;
@@ -783,27 +792,29 @@ a {
   color: #cdb578;
   display: block;
 }
-.homePageBack .mainHome .mainHomeIntroSectionParent .mainHomeIntroInnerTitle .holdingZarButtom {
+.homePageBack .mainHome .mainHomeIntroSectionParent .mainHomeIntroInnerTitle .mainHomeIntroInnerButtom {
   display: flex;
+  flex-wrap: wrap;
 }
-.homePageBack .mainHome .mainHomeIntroSectionParent .mainHomeIntroInnerTitle .holdingZarButtom .readMore {
+.homePageBack .mainHome .mainHomeIntroSectionParent .mainHomeIntroInnerTitle .mainHomeIntroInnerButtom .readMore {
   background-color: #cdb578;
   color: black;
   border-radius: 7px;
 }
-.homePageBack .mainHome .mainHomeIntroSectionParent .mainHomeIntroInnerTitle .holdingZarButtom div {
+.homePageBack .mainHome .mainHomeIntroSectionParent .mainHomeIntroInnerTitle .mainHomeIntroInnerButtom div {
   margin-left: 15px;
   padding: 5px 10px;
   display: flex;
   align-items: center;
 }
-.homePageBack .mainHome .mainHomeIntroSectionParent .mainHomeIntroInnerTitle .holdingZarButtom div span {
+.homePageBack .mainHome .mainHomeIntroSectionParent .mainHomeIntroInnerTitle .mainHomeIntroInnerButtom div span {
   display: flex;
   align-items: center;
   margin-right: 5px;
   transition: 0.3s;
+  cursor: pointer;
 }
-.homePageBack .mainHome .mainHomeIntroSectionParent .mainHomeIntroInnerTitle .holdingZarButtom div:hover span {
+.homePageBack .mainHome .mainHomeIntroSectionParent .mainHomeIntroInnerTitle .mainHomeIntroInnerButtom div:hover span {
   transform: translateX(-7px);
 }
 .homePageBack .mainHome .mainHomeIntroSectionParent .mainHomeIntroInnerImg {
@@ -835,42 +846,42 @@ a {
 .homePageBack .mainHome .holdingZar .img .counterNumbersInner .counterTitle {
   margin: 0;
 }
-.homePageBack .mainHome .ourServices {
+.homePageBack .mainHome .mainHomeOurServices {
   padding: 150px 0;
   text-align: center;
 }
-.homePageBack .mainHome .ourServices .serviceSwiper {
+.homePageBack .mainHome .mainHomeOurServices .serviceSwiper {
   margin-top: 50px;
 }
-.homePageBack .mainHome .ourServices h2 {
+.homePageBack .mainHome .mainHomeOurServices h2 {
   color: #cdb578;
   font-size: 25px;
   margin: 0;
   font-weight: 800;
 }
-.homePageBack .mainHome .ourServices span {
+.homePageBack .mainHome .mainHomeOurServices span {
   font-size: 13px;
   text-align: center;
   margin-bottom: 50px !important;
   font-weight: 100;
 }
-.homePageBack .mainHome .ourServices .swiper-pagination {
+.homePageBack .mainHome .mainHomeOurServices .swiper-pagination {
   position: unset !important;
 }
-.homePageBack .mainHome .ourServices .swiper-pagination span {
+.homePageBack .mainHome .mainHomeOurServices .swiper-pagination span {
   background: white;
   opacity: 100%;
 }
-.homePageBack .mainHome .ourServices .swiper-pagination .swiper-pagination-bullet-active {
+.homePageBack .mainHome .mainHomeOurServices .swiper-pagination .swiper-pagination-bullet-active {
   background: #cdb578;
 }
-.homePageBack .mainHome .ourServices .cards {
+.homePageBack .mainHome .mainHomeOurServices .mainHomeOurServicesCards {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: auto;
 }
-.homePageBack .mainHome .ourServices .cards .card {
+.homePageBack .mainHome .mainHomeOurServices .mainHomeOurServicesCards .mainHomeOurServicesCard {
   width: 23%;
   height: auto;
   border: 1px solid rgba(255, 255, 255, 0.484);
@@ -878,92 +889,95 @@ a {
   background-image: linear-gradient(rgba(19, 19, 19, 0.651), rgb(40, 40, 40));
   padding: 50px 0;
 }
-.homePageBack .mainHome .ourServices .cards .card path, .homePageBack .mainHome .ourServices .cards .card circle {
+.homePageBack .mainHome .mainHomeOurServices .mainHomeOurServicesCards .mainHomeOurServicesCard path, .homePageBack .mainHome .mainHomeOurServices .mainHomeOurServicesCards .mainHomeOurServicesCard circle {
   fill: #cdb578;
 }
-.homePageBack .mainHome .ourServices .cards .card h3 {
+.homePageBack .mainHome .mainHomeOurServices .mainHomeOurServicesCards .mainHomeOurServicesCard h3 {
   font-size: 16px;
   font-weight: 600;
 }
-.homePageBack .mainHome .ourServices .cards .card p {
+.homePageBack .mainHome .mainHomeOurServices .mainHomeOurServicesCards .mainHomeOurServicesCard p {
   margin: 0;
   padding: 0 30px;
+  font-size: 14px;
+  font-weight: 100;
 }
-.homePageBack .mainHome .holdingServices {
+.homePageBack .mainHome .mainHomeVrfServices {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
-.homePageBack .mainHome .holdingServices .text {
+.homePageBack .mainHome .mainHomeVrfServices .mainHomeVrfServicesText {
   width: 45%;
 }
-.homePageBack .mainHome .holdingServices .text h4 {
+.homePageBack .mainHome .mainHomeVrfServices .mainHomeVrfServicesText h4 {
   font-size: 14px;
   font-weight: 300;
 }
-.homePageBack .mainHome .holdingServices .text h2 {
+.homePageBack .mainHome .mainHomeVrfServices .mainHomeVrfServicesText h2 {
   font-size: 40px;
   margin: 15px 0;
 }
-.homePageBack .mainHome .holdingServices .text h2 span {
+.homePageBack .mainHome .mainHomeVrfServices .mainHomeVrfServicesText h2 span {
   color: #cdb578;
 }
-.homePageBack .mainHome .holdingServices .text p {
+.homePageBack .mainHome .mainHomeVrfServices .mainHomeVrfServicesText p {
   font-size: 15px;
   line-height: 28px;
   font-weight: 300;
   margin: 10px 0 25px;
 }
-.homePageBack .mainHome .holdingServices .text a {
+.homePageBack .mainHome .mainHomeVrfServices .mainHomeVrfServicesText a {
   border: 1px solid white;
   padding: 8px 18px;
   border-radius: 10px;
 }
-.homePageBack .mainHome .holdingServices .text a svg {
+.homePageBack .mainHome .mainHomeVrfServices .mainHomeVrfServicesText a svg {
   vertical-align: middle;
   transition: 0.3s;
 }
-.homePageBack .mainHome .holdingServices .text a:hover svg {
+.homePageBack .mainHome .mainHomeVrfServices .mainHomeVrfServicesText a:hover svg {
   transform: translateX(-7px);
 }
-.homePageBack .mainHome .ourProject {
+.homePageBack .mainHome .mainHomeOurProject {
   padding: 75px 0;
   text-align: center;
 }
-.homePageBack .mainHome .ourProject h2 {
+.homePageBack .mainHome .mainHomeOurProject h2 {
   color: #cdb578;
   font-size: 25px;
   margin: 0;
   font-weight: 800;
 }
-.homePageBack .mainHome .ourProject span {
+.homePageBack .mainHome .mainHomeOurProject span {
   font-size: 13px;
   text-align: center;
   margin-bottom: 50px;
   font-weight: 100;
 }
-.homePageBack .mainHome .ourProject a {
+.homePageBack .mainHome .mainHomeOurProject a {
   text-align: left;
   display: block;
 }
-.homePageBack .mainHome .ourProject .swiper-pagination {
+.homePageBack .mainHome .mainHomeOurProject .swiper-pagination {
   position: unset !important;
 }
-.homePageBack .mainHome .ourProject .swiper-pagination span {
+.homePageBack .mainHome .mainHomeOurProject .swiper-pagination span {
   background: white;
   opacity: 100%;
 }
-.homePageBack .mainHome .ourProject .swiper-pagination .swiper-pagination-bullet-active {
+.homePageBack .mainHome .mainHomeOurProject .swiper-pagination .swiper-pagination-bullet-active {
   background: #cdb578;
 }
-.homePageBack .mainHome .ourProject .cards {
+.homePageBack .mainHome .mainHomeOurProject .mainHomeOurProjectCards {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
   margin-top: 10px;
 }
-.homePageBack .mainHome .ourProject .card {
+.homePageBack .mainHome .mainHomeOurProject .mainHomeOurProjectCards .mainHomeOurProjectCard {
   width: 23%;
   height: 400px;
   position: relative;
@@ -971,53 +985,37 @@ a {
   overflow: hidden;
   transition: 0.3s;
 }
-.homePageBack .mainHome .ourProject .card:hover .gradient {
-  top: 40% !important;
-}
-.homePageBack .mainHome .ourProject .card:hover {
-  transform: translateY(-20px);
-}
-.homePageBack .mainHome .ourProject .card:hover .svgOne {
-  visibility: hidden;
-  opacity: 0% !important;
-}
-.homePageBack .mainHome .ourProject .card:hover .svgTwo {
-  visibility: visible !important;
-  opacity: 100% !important;
-}
-.homePageBack .mainHome .ourProject .card img {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.homePageBack .mainHome .ourProject .card .text {
+.homePageBack .mainHome .mainHomeOurProject .mainHomeOurProjectCards .mainHomeOurProjectCard .homeInnerProjectCardText {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.homePageBack .mainHome .ourProject .card .text h3 {
+.homePageBack .mainHome .mainHomeOurProject .mainHomeOurProjectCards .mainHomeOurProjectCard .homeInnerProjectCardText h3 {
   font-size: 25px;
   font-weight: 500;
+  cursor: pointer;
 }
-.homePageBack .mainHome .ourProject .card .text span {
+.homePageBack .mainHome .mainHomeOurProject .mainHomeOurProjectCards .mainHomeOurProjectCard .homeInnerProjectCardText span {
   position: absolute;
+  cursor: pointer;
   top: 10px;
   right: 10px;
 }
-.homePageBack .mainHome .ourProject .card .text span .svgTwo {
+.homePageBack .mainHome .mainHomeOurProject .mainHomeOurProjectCards .mainHomeOurProjectCard .homeInnerProjectCardText span .svgTwo {
   opacity: 0%;
   visibility: hidden;
   transition: 0.3s;
   transform: translateX(45px);
 }
-.homePageBack .mainHome .ourProject .card .text span .svgOne {
+.homePageBack .mainHome .mainHomeOurProject .mainHomeOurProjectCards .mainHomeOurProjectCard .homeInnerProjectCardText span .svgOne {
   opacity: 100%;
   transition: 0.3s;
 }
-.homePageBack .mainHome .ourProject .card .text .gradient {
+.homePageBack .mainHome .mainHomeOurProject .mainHomeOurProjectCards .mainHomeOurProjectCard .homeInnerProjectCardText .homeInnerProjectCardGradient {
   width: 100%;
   height: 70%;
   position: absolute;
-  top: 60%;
+  top: 55%;
   right: 0;
   background: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
   display: flex;
@@ -1025,51 +1023,73 @@ a {
   justify-content: flex-end;
   transition: 0.3s !important;
 }
-.homePageBack .mainHome .ourProject .card .text .gradient p {
+.homePageBack .mainHome .mainHomeOurProject .mainHomeOurProjectCards .mainHomeOurProjectCard .homeInnerProjectCardText .homeInnerProjectCardGradient p {
   padding: 0 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 100;
 }
-.homePageBack .mainHome .request {
+.homePageBack .mainHome .mainHomeOurProject .mainHomeOurProjectCards .mainHomeOurProjectCard:hover .homeInnerProjectCardGradient {
+  top: 30% !important;
+}
+.homePageBack .mainHome .mainHomeOurProject .mainHomeOurProjectCards .mainHomeOurProjectCard:hover {
+  transform: translateY(-20px);
+}
+.homePageBack .mainHome .mainHomeOurProject .mainHomeOurProjectCards .mainHomeOurProjectCard:hover .svgOne {
+  visibility: hidden;
+  opacity: 0% !important;
+}
+.homePageBack .mainHome .mainHomeOurProject .mainHomeOurProjectCards .mainHomeOurProjectCard:hover .svgTwo {
+  visibility: visible !important;
+  opacity: 100% !important;
+}
+.homePageBack .mainHome .mainHomeOurProject .mainHomeOurProjectCards .mainHomeOurProjectCard img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.homePageBack .mainHome .mainHomeRequest {
   padding: 75px 0;
   text-align: center;
 }
-.homePageBack .mainHome .request h2 {
+.homePageBack .mainHome .mainHomeRequest h2 {
   color: #cdb578;
   font-size: 25px;
   margin: 0;
   font-weight: 800;
 }
-.homePageBack .mainHome .request span {
+.homePageBack .mainHome .mainHomeRequest span {
   font-size: 13px;
   text-align: center;
   margin-bottom: 50px;
   font-weight: 100;
 }
-.homePageBack .mainHome .request .main {
+.homePageBack .mainHome .mainHomeRequest .mainHomeRequestInnerText {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
-.homePageBack .mainHome .request .main .form {
+.homePageBack .mainHome .mainHomeRequest .mainHomeRequestInnerText .mainHomeRequestInnerForm {
   width: 40%;
 }
-.homePageBack .mainHome .request .main .formRequest {
+.homePageBack .mainHome .mainHomeRequest .mainHomeRequestInnerText .formRequest {
   text-align: right;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
-.homePageBack .mainHome .request .main .formRequest h4 {
+.homePageBack .mainHome .mainHomeRequest .mainHomeRequestInnerText .formRequest h4 {
   font-weight: 400;
   margin: 0;
 }
-.homePageBack .mainHome .request .main .formRequest p {
+.homePageBack .mainHome .mainHomeRequest .mainHomeRequestInnerText .formRequest p {
   margin: 10px 0 40px 0;
   width: 90%;
 }
-.homePageBack .mainHome .request .main .formRequest input:focus {
+.homePageBack .mainHome .mainHomeRequest .mainHomeRequestInnerText .formRequest input:focus {
   outline: none;
 }
-.homePageBack .mainHome .request .main .formRequest input[type=text] {
+.homePageBack .mainHome .mainHomeRequest .mainHomeRequestInnerText .formRequest input[type=text] {
   width: 100%;
   color: white;
   background: transparent;
@@ -1077,19 +1097,19 @@ a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
   padding: 8px 0;
 }
-.homePageBack .mainHome .request .main .formRequest input[type=text]::-moz-placeholder {
+.homePageBack .mainHome .mainHomeRequest .mainHomeRequestInnerText .formRequest input[type=text]::-moz-placeholder {
   color: white;
   font-size: 14px;
   font-weight: 200;
   font-family: "yekanbakhweb" !important;
 }
-.homePageBack .mainHome .request .main .formRequest input[type=text]::placeholder {
+.homePageBack .mainHome .mainHomeRequest .mainHomeRequestInnerText .formRequest input[type=text]::placeholder {
   color: white;
   font-size: 14px;
   font-weight: 200;
   font-family: "yekanbakhweb" !important;
 }
-.homePageBack .mainHome .request .main .formRequest input[type=email] {
+.homePageBack .mainHome .mainHomeRequest .mainHomeRequestInnerText .formRequest input[type=email] {
   width: 100%;
   color: white;
   background-color: #282828;
@@ -1100,17 +1120,17 @@ a {
   background: transparent;
   font-family: "yekanbakhweb" !important;
 }
-.homePageBack .mainHome .request .main .formRequest input[type=email]::-moz-placeholder {
+.homePageBack .mainHome .mainHomeRequest .mainHomeRequestInnerText .formRequest input[type=email]::-moz-placeholder {
   color: white;
   font-size: 14px;
   font-weight: 200;
 }
-.homePageBack .mainHome .request .main .formRequest input[type=email]::placeholder {
+.homePageBack .mainHome .mainHomeRequest .mainHomeRequestInnerText .formRequest input[type=email]::placeholder {
   color: white;
   font-size: 14px;
   font-weight: 200;
 }
-.homePageBack .mainHome .request .main .formRequest input[type=submit] {
+.homePageBack .mainHome .mainHomeRequest .mainHomeRequestInnerText .formRequest input[type=submit] {
   font-family: "yekanbakhweb" !important;
   background-color: #cdb578;
   padding: 10px 15px;
@@ -1118,7 +1138,7 @@ a {
   font-weight: 600;
   border-radius: 10px;
 }
-.homePageBack .mainHome .request .main .formRequest div p {
+.homePageBack .mainHome .mainHomeRequest .mainHomeRequestInnerText .formRequest div p {
   text-align: right;
 }
 

@@ -669,9 +669,15 @@ a{
             justify-content: space-between;
             align-items: center;
             li{
+                position: relative;
                 list-style: none;
-                padding: 5px 10px;
+                padding: 5px 15px;
+                margin: 0 5px;
                 font-weight: 600;
+                transition: .3s;
+                &:hover{
+                    border-bottom: 1px solid #cdb578;
+                }
                 ul{
                     z-index: 100;
                     position: absolute;
@@ -691,6 +697,8 @@ a{
                     }
                     li{
                         border-bottom: 1px solid black;
+                        margin: 0;
+                        padding: 5px;
                         a{
                             font-weight: 300;
                         }
@@ -736,6 +744,7 @@ a{
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
             .mainHomeIntroInnerTitle{
               width: 35%;
               text-align: right;
@@ -747,8 +756,9 @@ a{
                 color: #cdb578;
                 display: block;
               }
-              .holdingZarButtom{
+              .mainHomeIntroInnerButtom{
                 display: flex;
+                flex-wrap: wrap;
                 
                 .readMore{
                 background-color: #cdb578;
@@ -766,6 +776,7 @@ a{
                     align-items: center;
                     margin-right: 5px;
                     transition: .3s;
+                    cursor: pointer;
                 }
                 &:hover span{
                     transform: translateX(-7px);
@@ -803,7 +814,7 @@ a{
               }
             }
         }
-        .ourServices{
+        .mainHomeOurServices{
             padding: 150px 0;
             text-align: center;
             .serviceSwiper {
@@ -831,12 +842,12 @@ a{
                     background: #cdb578;
                 }
             }
-            .cards{
+            .mainHomeOurServicesCards{
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin: auto;
-            .card{
+            .mainHomeOurServicesCard{
                 width: 23%;
                 height: auto;
                 border: 1px solid rgba(255, 255, 255, 0.484) ;
@@ -853,15 +864,18 @@ a{
                 p{
                     margin: 0;
                     padding: 0 30px;
+                    font-size: 14px;
+                    font-weight: 100;
                 }
                 }
             }
         }
-        .holdingServices{
+        .mainHomeVrfServices{
             display: flex;
             justify-content: space-between;
             align-items: center;
-            .text{
+            flex-wrap: wrap;
+            .mainHomeVrfServicesText{
                 width: 45%;
                 h4{
                     font-size: 14px;
@@ -895,7 +909,7 @@ a{
                 
             }
         }
-        .ourProject{
+        .mainHomeOurProject{
             padding: 75px 0;
             text-align: center;
             h2{
@@ -924,82 +938,87 @@ a{
                     background: #cdb578;
                 }
             }
-            .cards{
+            .mainHomeOurProjectCards{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 padding: 20px 0;
                 margin-top: 10px;
-            }
-            .card{
-                width: 23%;
-                height: 400px;
-                position: relative;
-                border-radius: 10px;
-                overflow: hidden;
-                transition: .3s; 
-                &:hover .gradient {
-                    top: 40% !important;
-
-                }
-                &:hover {
-                    transform: translateY(-20px);
-                    .svgOne{
-                        visibility: hidden;
-                        opacity: 0% !important;
-                    }
-                    .svgTwo{
-                        visibility: visible !important;
-                        opacity: 100% !important;
-                    }
-                }
-                img{
-                    object-fit: cover;
-                }
-                .text{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    h3{
-                        font-size: 25px;
-                        font-weight: 500;
-                    }
-                    span{
-                        position: absolute;
-                        // display: flex;
-                        top: 10px;
-                        right: 10px;
-                        .svgTwo{
-                            opacity: 0%;
-                            visibility: hidden;
-                            transition: .3s;
-                            transform: translateX(45px);
-                        }
-                        .svgOne{
-                            opacity: 100%;
-                            transition: .3s;
-                        }
-                    }
-                    .gradient{
-                        width: 100%;
-                        height: 70%;
-                        position: absolute;
-                        top: 60%;
-                        right: 0;
-                        background: linear-gradient(rgba(0, 0, 0, 0),rgb(0, 0, 0));
+                .mainHomeOurProjectCard{
+                    width: 23%;
+                    height: 400px;
+                    position: relative;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    transition: .3s; 
+                    .homeInnerProjectCardText{
                         display: flex;
                         flex-direction: column;
-                        justify-content: flex-end;
-                        transition: .3s !important;
-                        p{
-                            padding: 0 20px;
+                        justify-content: space-between;
+                        h3{
+                            font-size: 25px;
+                            font-weight: 500;
+                            cursor: pointer;
                         }
-                        
+                        span{
+                            position: absolute;
+                            cursor: pointer;
+                            top: 10px;
+                            right: 10px;
+                            .svgTwo{
+                                opacity: 0%;
+                                visibility: hidden;
+                                transition: .3s;
+                                transform: translateX(45px);
+                            }
+                            .svgOne{
+                                opacity: 100%;
+                                transition: .3s;
+                            }
+                        }
+                        .homeInnerProjectCardGradient{
+                            width: 100%;
+                            height: 70%;
+                            position: absolute;
+                            top: 55%;
+                            right: 0;
+                            background: linear-gradient(rgba(0, 0, 0, 0),rgb(0, 0, 0));
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-end;
+                            transition: .3s !important;
+                            p{
+                                padding: 0 20px;
+                                cursor: pointer;
+                                font-size: 14px;
+                                font-weight: 100;
+                            }
+                            
+                        }
+                    }
+                    &:hover .homeInnerProjectCardGradient {
+                        top: 30% !important;
+    
+                    }
+                    &:hover {
+                        transform: translateY(-20px);
+                        .svgOne{
+                            visibility: hidden;
+                            opacity: 0% !important;
+                        }
+                        .svgTwo{
+                            visibility: visible !important;
+                            opacity: 100% !important;
+                        }
+                    }
+                    img{
+                        object-fit: cover;
                     }
                 }
             }
+            
         }
-        .request{
+        .mainHomeRequest{
             padding: 75px 0;
             text-align: center;
             
@@ -1015,11 +1034,12 @@ a{
                 margin-bottom: 50px;
                 font-weight: 100;
             }
-            .main{
+            .mainHomeRequestInnerText{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                .form{
+                flex-wrap: wrap;
+                .mainHomeRequestInnerForm{
                     width: 40%;
                 }
                 .formRequest{
