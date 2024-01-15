@@ -10,7 +10,7 @@ get_header();
 ?>
 
 <div class="homePageBack">
-    <div class="homePage mainHome">
+    <div class="homePage mainHome mainView">
         <div class="mainHomeIntroSectionParent">
             <div class="mainHomeIntroInnerTitle">
                 <h2><span>هلدینگ خانه زر</span>تنها مجری تخصصی سیستم وی آر اف</h2>
@@ -189,7 +189,7 @@ get_header();
                 <div class="mainHomeRequestInnerForm">
                     <?php echo do_shortcode('[contact-form-7 id="554d9f0" title="درخواست"]') ?>
                 </div>
-                <img src="<?php echo get_template_directory_uri() ?>/img/ou9.png">
+                <div class="mainHomeRequestInnerImg"><img src="<?php echo get_template_directory_uri() ?>/img/ou9.png"></div>
             </div>
         </div>
     </div>

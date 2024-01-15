@@ -11,6 +11,19 @@ body{
     background-size: contain;
     background-position-y:bottom ;
 }
+.mainView{
+    max-width: 1280px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    @include mvb{
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
 a{
     color: inherit;
     text-decoration: none;
@@ -22,6 +35,9 @@ a{
         justify-content: space-between;
         align-items: center;
         .menuSection{
+            @include sm{
+                display: none;
+            }
             ul{
                 display: flex;
             justify-content: space-between;
@@ -106,6 +122,9 @@ a{
             .mainHomeIntroInnerTitle{
               width: 35%;
               text-align: right;
+              @include sm{
+                width: 100%;
+              }
               h2{
                 font-size: 40px;
                 margin-bottom: 0;
@@ -146,6 +165,9 @@ a{
             .mainHomeIntroInnerImg{
               width: 62%;
               position: relative;
+              @include sm{
+                width: 100%;
+              }
               .counterNumbersInner{
                 border-radius: 0 10px 10px 0;
                 display: flex;
@@ -235,8 +257,22 @@ a{
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
+            .mainHomeVrfServicesImg{
+                width: 50%;
+                img{
+                    width: 100%;
+                }
+                @include sm{
+                    width: 100%;
+                    order: 2;
+                }
+            }
             .mainHomeVrfServicesText{
                 width: 45%;
+                @include sm{
+                    width: 100%;
+                    margin-bottom: 25px;
+                }
                 h4{
                     font-size: 14px;
                     font-weight: 300;
@@ -409,6 +445,15 @@ a{
                 .mainHomeRequestInnerForm{
                     width: 40%;
                 }
+                .mainHomeRequestInnerImg{
+                    img{
+                        width: 100%;
+                    }
+                    width: 50%;
+                    @include sm{
+                        width: 100%;
+                    }
+                }
                 .formRequest{
                     text-align: right;
                     display: flex;
@@ -478,98 +523,12 @@ a{
     }
 }
 .aboutPageBack{
-    .mainView{
-        max-width: 1280px;
-        margin: auto;
-        .introSection{
+    .aboutPage{
+        .aboutPageHeading{
+            color: #cdb578;
             text-align: center;
-            img{
-                border-radius: 10px;
-                margin: 10px 0 0 0;
-            }
-            .titles{
-                display: flex;
-                justify-content: space-between;
-                padding: 0 10px;
-                .titleOne{
-                    width: 48%;
-                    text-align: right;
-                    p{
-                        line-height: 30px;
-                        font-size: 14px;
-                        color: rgb(77, 77, 77);
-                    }
-                }
-                .titleTwo{
-                    width: 44%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    .borderRight{
-                        border-right: 3px solid rgb(157, 157, 157);
-                    }
-                    div{
-                        padding: 0 30px;
-                        span{
-                            font-size: 18px;
-                            font-weight: 700;
-                        }
-                        h2{
-                            font-size: 45px;
-                            margin: 10px 0 0 0 ;
-                        }
-                    }
-                }
-                h2{
-                    color: #002D64;
-                }
-            }
         }
-        .main{
-            margin: 50px 0;
-            .row{
-                margin: 60px 0;
-            }
-            .title{
-                h4{
-                    color: #002D64;
-                    margin: 15px 10px;
-                    font-size: 18px;
-                }
-            }
-            .cards{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                .card{
-                    border: 1px solid rgba(176, 176, 176, 0.715);
-                    padding: 15px;
-                    border-radius: 10px;
-                    text-align: center;
-                    img{
-                        border-radius: 10px;
-                    }
-                    h3{
-                        margin: 0;
-                        color: #002D64;
-                    }
-                    span{
-                        font-size: 14px;
-                        color: gray;
-                        font-weight: 500;
-                    }
-                    div.svg{
-                        margin-top: 8px;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        a{
-                            display: flex;
-                        }
-                    }
-                }
-            }
-        }
+        
     }
 }
 .mainArchiveGridWrapper{
@@ -848,6 +807,372 @@ a{
     .bottomFormSvg{
         svg{
             margin-left: 15px;
+        }
+    }
+}
+.headingBlogPage{
+    margin: 30px 0px;
+    text-align: center;
+    color: #cdb578;
+}
+.archiveParent{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    grid-gap: 30px;
+    margin-bottom: 30px;
+    @include sm{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-gap: 15px;
+    }
+    @include xs{
+        grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+        grid-gap: 10px !important;
+    }
+    .cardsArchiveParent{
+        transition: all 0.4s;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid rgba(255, 255, 255, 0.484);
+        border-radius: 10px;
+        background-image: linear-gradient(rgba(19, 19, 19, 0.651), rgb(40, 40, 40));
+        &:hover{
+            border: 1px solid rgba(255, 255, 255, 0.666);
+            img{
+                transform: scale(1.1);
+            }
+        }
+        @include xs{
+            margin: 7px 0;
+        }
+        .archiveCardImg{
+            overflow: hidden;
+            min-height: 300px;
+            max-height: 300px;
+            @include xs{
+                min-height: 170px;
+                max-height: 170px;
+            }
+            img{
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        img{
+            transition: all 0.4s;
+        }
+        .entry-header{
+            padding: 0px 20px;
+            .entry-title{
+                margin-bottom: 8px;
+                font-size: 21px;
+                color: #eeeeee;
+                font-weight: 600;
+            }
+        }
+        .archiveCardExcerpt{
+            padding: 20px;
+            p{
+                margin: 0;
+                text-align: justify;
+                color: #7d7d7d;
+            }
+        }
+        .archivePostDetail{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 0px 20px;
+            .archiveCardDate{
+                padding-left: 10px;
+                border-left: 1px solid #fff;
+            }
+            span{
+                color: #eeeeee;
+                font-weight: 300;
+                font-size: 13px;
+            }
+        }
+    }
+}
+.archivePagination{
+    position: relative;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(2px);
+    width: max-content;
+    margin: 25px auto;
+    .current , .page-numbers{
+        position: relative;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #eeeeee;
+    }
+    .current{
+        color: #cdb578;
+        font-weight: 500;
+    }
+    .page-numbers{
+        font-weight: 300;
+    }
+    .next{
+        position: relative;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        svg{
+            display: block;
+        }
+    }
+}
+.singleBox {
+    margin: 50px auto;
+    max-width: 1000px;
+}
+.generalSinglePostStyle{
+    .entry-header{
+        text-align: center;
+        color: #eeeeee;
+    }
+    .singlePostDetailParent{
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        justify-content: center;
+        font-size: 14px;
+        color: #eeeeee;
+        font-weight: 300;
+        @include xs{
+            gap: 10px;
+            font-size: 11px;
+            flex-wrap: wrap;
+        }
+    }
+    .post-thumbnail{
+        margin: 15px 0px 25px 0px;
+        img{
+            display: block;
+            border-radius: 10px;
+            margin: auto;
+        }
+    }
+    .entry-content{
+        h1,h2,h3,h4,h5,h6{
+            color: #cdb578;
+            font-weight: 600;
+        }
+        p{
+            color: #eeeeee;
+            text-align: justify;
+            line-height: 30px;
+        }
+    }
+    .entry-footer{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        justify-content: end;
+        .commentsCount , .likeCount{
+            display: flex;
+            gap: 5px;
+            align-items: flex-start;
+            svg{
+                display: block;
+            }
+            span{
+                color: #eeeeee;
+            }
+        }
+    }
+    article{
+        border-bottom: 1px solid #eeeeee;
+        padding-bottom: 20px;
+    }
+}
+.single-post{
+    .comments-area{
+        .commentsOpenParent{
+            .commentsTitle{
+                text-align: center;
+                font-size: 20px;
+                color: #eeeeee;
+            }
+            .comment-list{
+                padding: 0 !important;
+                margin: 0 !important;
+                list-style-type: none !important;
+                li{
+                    padding: 20px;
+                    margin: 0;
+                    background-color: #363636;
+                    border: 1px solid #58606c;
+                    border-radius: 10px;
+                    margin-bottom: 10px;
+                    .comment-body{
+                        padding: 25px;
+                        border-radius: 10px;
+                        @include sm{
+                            padding: 15px;
+                        }
+                        .comment-meta{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            margin-bottom: 10px;
+                            @include xs{
+                                align-items: normal;
+                                flex-direction: column;
+                                font-size: 12px;
+                            }
+                            .comment-author{
+                                display: flex;
+                                align-items: center;
+                                gap: 8px;
+                                color: #eeeeee;
+                                img{
+                                    width: 40px;
+                                    height: 40px;
+                                    border-radius: 100%;
+                                    @include xs{
+                                        width: 30px;
+                                        height: 30px;
+                                        margin-left: 10px;
+                                    }
+                                }
+                            }
+                            .comment-metadata a time{
+                                font-size: 14px;
+                                color: #eeeeee;
+                                font-weight: 200;
+                            }
+                        }
+                        .comment-content{
+                            p{
+                                color: #eeeeee;
+                                @include xs{
+                                    font-size: 13px;
+                                    margin-bottom: 10px;
+                                }
+                            }
+                        }
+                        .reply{
+                            a{
+                                border: 1px solid #eeeeee;
+                                padding: 3px 10px;
+                                border-radius: 10px;
+                                font-size: 14px;
+                                display: flex;
+                                width: max-content;
+                                margin-right: auto;
+                                color: #eeeeee;
+                            }
+                        }
+                    }
+                    .children{
+                        list-style-type: none !important;
+                        @include xs{
+                            padding-right: 7px;
+                        }
+                        li{
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .commentSection{
+            .comment-form-url{
+                display: none;
+            }
+            .comment-reply-title{
+                font-weight: 600;
+                color: #eeeeee;
+            }
+            .comment-notes , .logged-in-as{
+                color: #eeeeee;
+                font-size: 13px;
+                font-weight: 200;
+            }
+        }
+        
+        label{
+            display: block;
+            margin-bottom: 15px;
+            font-size: 14px;
+            font-weight: 500;
+            text-align: right;
+            width: 100%;
+            color: #eeeeee;
+            font-family: 'yekanbakhweb';
+        }
+        input{
+            margin-top: 5px;
+            display: block;
+            width: 100%;
+            padding: 10px 20px;
+            &[type=text] , &[type=password] , &[type=email] , &[type=tel] , &[type=url]{
+                background-color: #363636;
+                border: 1px solid #58606c;
+                border-radius: 10px;
+                font-size: 14px;
+                color: #eeeeee !important;
+                font-family: 'yekanbakhweb';
+                @include placeholder{
+                    color: #eeeeee;
+                    opacity: 0.25;
+                }
+            }
+            &[type=checkbox]{
+                width: max-content;
+                margin: 0;
+            }
+            &[type=submit]{
+                background-color: #cdb578;
+                color: #282828;
+                border: none;
+                font-weight: 600;
+                padding: 15px 25px;
+                cursor: pointer;
+                transition: all 0.4s;
+                border-radius: 10px;
+                font-size: 15px;
+                font-family: 'yekanbakhweb';
+                &:hover{
+                    background-color: darken(#cdb578,3%);
+                }
+            }
+            &:focus{
+                outline: none;
+            }
+        }
+        textarea{
+            margin-top: 5px;
+            display: block;
+            width: 100%;
+            height: 200px;
+            padding: 10px 20px;
+            resize: none;
+            background-color: #363636;
+            border: 1px solid #58606c;
+            border-radius: 10px;
+            color: #eeeeee;
+            font-size: 14px;
+            font-family: 'yekanbakhweb';
+            @include placeholder{
+                color: #eeeeee;
+                opacity: 0.25;
+            }
+            &:focus{
+                outline: none;
+            }
         }
     }
 }

@@ -181,3 +181,51 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+
+function bbloomer_shop_product_short_description() {
+	the_excerpt();
+}
+
+function my_excerpt_length($length){
+	return 18;
+}
+add_filter('excerpt_length', 'my_excerpt_length');
+
+
+function new_excerpt_more( $more ) {
+	return ' ... ';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
+
+
+function pagination_bar() {
+	global $wp_query;
+	$total_pages = $wp_query->max_num_pages;
+	if ($total_pages > 1){
+		// $current_page = max(1, get_query_var('paged'));
+		global $wp_query;
+		$wp_query->query_vars['paged'] > 1 ? $current = $wp_query->query_vars['paged'] : $current = 1;
+		echo paginate_links(array(
+			'base' =>@add_query_arg('paged','%#%'),
+			'format' => '/page/%#%',
+			'current' => $current,
+			'total' => $total_pages,
+			'next_text' => '<span class="leftArrow"><svg width="12px" height="12px" xmlns="http://www.w3.org/2000/svg" fill="#3f3f3f" id="Layer_1" x="0" y="0" version="1.1" viewBox="0 0 29 29" xml:space="preserve"><path fill="none" stroke="#505050" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="m20.5 26.5-12-12 12-12"></path></svg></span>',
+			'prev_text' => '<span class="rightArrow"><svg width="12px" height="12px" xmlns="http://www.w3.org/2000/svg" fill="#3f3f3f" id="Layer_1" x="0" y="0" version="1.1" viewBox="0 0 29 29" xml:space="preserve"><path fill="none" stroke="#505050" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="m8.5 2.5 12 12-12 12"></path></svg></span>'
+		));
+	}
+}
+
+
+function calculate_reading_time() {
+    $content = get_post_field('post_content', get_the_ID());
+    $word_count = str_word_count($content);
+    $reading_speed = 150;
+    $reading_time = ceil($word_count / $reading_speed);
+    return sprintf(_n('%d', '%d', $reading_time, 'textdomain'), $reading_time);
+}
+function reading_time_shortcode() {
+    return '<span class="reading-time">' . calculate_reading_time() . '</span>';
+}
+add_shortcode('reading_time', 'reading_time_shortcode');
