@@ -50,6 +50,7 @@ function khane_zar_setup() {
 	register_nav_menus(
 		array(
 			'menu-1' => esc_html__( 'Primary', 'khane_zar' ),
+			'menu-2' => esc_html__( 'Mobile-Menu', 'khane_zar')
 		)
 	);
 
@@ -286,3 +287,46 @@ function get_initial_likes() {
 
 add_action('wp_ajax_get_initial_likes', 'get_initial_likes');
 add_action('wp_ajax_nopriv_get_initial_likes', 'get_initial_likes'); // For non-logged-in users
+
+
+
+add_filter('wp_nav_menu_objects', 'my_wp_nav_menu_objects', 10, 2);
+
+function my_wp_nav_menu_objects($items, $args) {
+    foreach ($items as &$item) {
+        $icon = get_field('svg_menu_item_icon', $item);
+        if ($icon) {
+            $icon_markup = '<div class="menu-icon">' . $icon . '</div>';
+            $item->title = $icon_markup . $item->title;
+        }
+    }
+    return $items;
+}
+
+add_filter( 'wp_kses_allowed_html', 'acf_add_allowed_svg_tag', 10, 2 );
+
+function acf_add_allowed_svg_tag( $tags, $context ) {
+    if ( $context === 'acf' ) {
+        $tags['svg']  = array(
+            'xmlns'        => true,
+      'width'      => true,
+      'height'    => true,
+      'stroke'    => true,
+      'stroke-width'    => true,
+      'preserveAspectRatio'  => true,
+            'fill'        => true,
+            'viewbox'        => true,
+            'role'        => true,
+            'aria-hidden'      => true,
+            'focusable'        => true,
+        );
+
+        $tags['path'] = array(
+            'd'    => true,
+            'fill' => true,
+			'stroke'    => true,
+			'stroke-width'    => true,
+        );
+    }
+    return $tags;
+}

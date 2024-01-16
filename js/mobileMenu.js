@@ -4,12 +4,12 @@ var svg = '<svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBo
 
 $(document).ready(function(){
     $(".menuMobile").click(function(){
-        $(".mobileMenuContainer").addClass("showMenuMobile");
-        $(".mobileMenuOverlay").addClass("showMobileMenuOverlay");
+        $(".mobileMenuContainer").fadeIn(400);
+        // $(".mobileMenuOverlay").addClass("showMobileMenuOverlay");
     })
     $(".closeMenu").click(function(){
-        $(".mobileMenuContainer").removeClass("showMenuMobile");
-        $(".mobileMenuOverlay").removeClass("showMobileMenuOverlay");
+        $(".mobileMenuContainer").fadeOut(400);
+        // $(".mobileMenuOverlay").removeClass("showMobileMenuOverlay");
     })
 
     $(".mobileMenu>ul>.menu-item-has-children>a").click(function(){
