@@ -50,24 +50,6 @@ get_header();
                         <div class="counterTitle">رضایت مشتری</div>
                     </div>
                 </div> -->
-                <div class="counterNumbersInner" id="counterNumbers">
-                    <div class="counterItem aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
-                        <div class="counterNumber"><span id="counter-1">45</span></div>
-                        <div class="counterTitle">سال تجربه</div>
-                    </div>
-                    <div class="counterItem aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
-                        <div class="counterNumber"><span id="counter-2">420</span><span>+</span></div>
-                        <div class="counterTitle">پروژه ساختمانی</div>
-                    </div>
-                    <div class="counterItem aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
-                        <div class="counterNumber"><span id="counter-3">235</span><span>+</span></div>
-                        <div class="counterTitle">نصب موفق VRF</div>
-                    </div>
-                    <div class="counterItem aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
-                        <div class="counterNumber"><span id="counter-4">1410</span><span>+</span></div>
-                        <div class="counterTitle">رضایت مشتری</div>
-                    </div>
-                </div>
             </div>
         </div>
         <div>

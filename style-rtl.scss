@@ -20,6 +20,105 @@ body{
         padding-left: 15px !important;
     }
 }
+.mobileMenuOverlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 99999999;
+    display: none;
+}
+.showMobileMenuOverlay{
+    display: block;
+}
+.mobileMenuContainer{
+    position: fixed;
+    background-color: #fff;
+    top: 0px;
+    bottom: 0;
+    height: auto;
+    width: 280px;
+    right: -100%;
+    z-index: 999999991;
+    transition: all 0.4s;
+    .closeMenu{
+        margin: 20px;
+    }
+    .current-menu-item{
+        a{
+            color: #cdb578;
+        }
+    }
+    ul{
+        padding: 0 20px;
+        list-style-type: none;
+        li{
+            margin: 20px 0;
+            &::before{
+                display: none;
+            }
+            a{
+                font-size: 13px;
+                font-weight: 500;
+                color: black;
+                transition: .3s;
+                display: flex;
+                align-items: center;
+                svg{
+                    margin-right: 5px;
+                    transition: .4s;
+                }
+                &:hover{
+                    color: #cdb578;
+                }
+            }
+            &:hover ul{
+                visibility: visible;
+                opacity: 1;
+            }
+            ul{
+                z-index: 100;
+                color: black;
+                border-radius: 10px;
+                margin-top: 5px;
+                padding-right: 10px;
+                display: flex;
+                flex-direction: column;
+                width: 150px;
+                display: none;
+                li{
+                    margin: 0;
+                    padding: 5px;
+                    text-align: center;
+                    a{
+                        font-size: 12.5px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}
+.menuMobile{
+    display: none;
+    svg{
+        fill: white;
+    }
+    @include sm{
+        
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+.showMenuMobile{
+    display: flex;
+    right: 0;
+    justify-content: space-between;
+    transition: .4s;
+}
 .current-menu-item{
     a{
         color: #cdb578;
@@ -40,6 +139,23 @@ a{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include sm{
+            .logoSection{
+                order: 2;
+                
+            }
+            .signSection{
+                order: 1;
+                svg{
+                    margin: 0 0 0 20px !important;
+                }
+                width: 20%;
+            }
+            .menuMobile{
+                order: 3;
+                width: 20%;
+            }
+        }
         .menuSection{
             @include sm{
                 display: none !important;
@@ -96,6 +212,7 @@ a{
             align-items: center;
             svg{
                 margin-right: 20px;
+                cursor: pointer;
                 path,circle{
                     fill: white;
                    }
@@ -111,6 +228,116 @@ a{
 
     }
 }
+.mainHomeOurProject{
+    padding: 75px 0;
+    text-align: center;
+    h2{
+        color: #cdb578;
+        font-size: 25px;
+        margin: 0;
+        font-weight: 800;
+    }
+    span{
+        font-size: 13px;
+        text-align: center;
+        margin-bottom: 50px;
+        font-weight: 100;
+    }
+    a{
+        text-align: left;
+        display: block;
+    }
+    .swiper-pagination{
+        position: unset !important;
+        span{
+            background: white;
+            opacity: 100%;
+        }
+        .swiper-pagination-bullet-active{
+            background: #cdb578;
+        }
+    }
+    .mainHomeOurProjectCards{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        margin-top: 10px;
+        .mainHomeOurProjectCard{
+            width: 23%;
+            height: 400px;
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: .3s; 
+            .homeInnerProjectCardText{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                h3{
+                    font-size: 25px;
+                    font-weight: 500;
+                    cursor: pointer;
+                    margin:  0;
+                }
+                span{
+                    position: absolute;
+                    cursor: pointer;
+                    top: 10px;
+                    right: 10px;
+                    .svgTwo{
+                        opacity: 0%;
+                        visibility: hidden;
+                        transition: .3s;
+                        transform: translateX(45px);
+                    }
+                    .svgOne{
+                        opacity: 100%;
+                        transition: .3s;
+                    }
+                }
+                .homeInnerProjectCardGradient{
+                    width: 100%;
+                    height: 70%;
+                    position: absolute;
+                    top: 58%;
+                    right: 0;
+                    background: linear-gradient(rgba(0, 0, 0, 0),rgb(0, 0, 0));
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    transition: .3s !important;
+                    p{
+                        padding: 0 20px;
+                        cursor: pointer;
+                        font-size: 13px;
+                        font-weight: 300;
+                        padding-bottom:40PX ;
+                    }
+                    
+                }
+            }
+            &:hover .homeInnerProjectCardGradient {
+                top: 35% !important;
+            }
+            &:hover {
+                transform: translateY(-20px);
+                .svgOne{
+                    visibility: hidden;
+                    opacity: 0% !important;
+                }
+                .svgTwo{
+                    visibility: visible !important;
+                    opacity: 100% !important;
+                }
+            }
+            img{
+                object-fit: cover;
+            }
+        }
+    }
+    
+}
 .homePageBack{
     .mainHome{ 
         color: white;
@@ -125,7 +352,12 @@ a{
               width: 35%;
               text-align: right;
               @include sm{
-                width: 100% !important;
+                width: 90% !important;
+                margin: auto;
+                text-align: center;
+                .mainHomeIntroInnerButtom{
+                    justify-content: center;
+                }
               }
               h2{
                 font-size: 40px;
@@ -323,116 +555,7 @@ a{
                 
             }
         }
-        .mainHomeOurProject{
-            padding: 75px 0;
-            text-align: center;
-            h2{
-                color: #cdb578;
-                font-size: 25px;
-                margin: 0;
-                font-weight: 800;
-            }
-            span{
-                font-size: 13px;
-                text-align: center;
-                margin-bottom: 50px;
-                font-weight: 100;
-            }
-            a{
-                text-align: left;
-                display: block;
-            }
-            .swiper-pagination{
-                position: unset !important;
-                span{
-                    background: white;
-                    opacity: 100%;
-                }
-                .swiper-pagination-bullet-active{
-                    background: #cdb578;
-                }
-            }
-            .mainHomeOurProjectCards{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 20px 0;
-                margin-top: 10px;
-                .mainHomeOurProjectCard{
-                    width: 23%;
-                    height: 400px;
-                    position: relative;
-                    border-radius: 10px;
-                    overflow: hidden;
-                    transition: .3s; 
-                    .homeInnerProjectCardText{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-between;
-                        h3{
-                            font-size: 25px;
-                            font-weight: 500;
-                            cursor: pointer;
-                            margin:  0;
-                        }
-                        span{
-                            position: absolute;
-                            cursor: pointer;
-                            top: 10px;
-                            right: 10px;
-                            .svgTwo{
-                                opacity: 0%;
-                                visibility: hidden;
-                                transition: .3s;
-                                transform: translateX(45px);
-                            }
-                            .svgOne{
-                                opacity: 100%;
-                                transition: .3s;
-                            }
-                        }
-                        .homeInnerProjectCardGradient{
-                            width: 100%;
-                            height: 70%;
-                            position: absolute;
-                            top: 58%;
-                            right: 0;
-                            background: linear-gradient(rgba(0, 0, 0, 0),rgb(0, 0, 0));
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: flex-end;
-                            transition: .3s !important;
-                            p{
-                                padding: 0 20px;
-                                cursor: pointer;
-                                font-size: 13px;
-                                font-weight: 300;
-                                padding-bottom:40PX ;
-                            }
-                            
-                        }
-                    }
-                    &:hover .homeInnerProjectCardGradient {
-                        top: 35% !important;
-                    }
-                    &:hover {
-                        transform: translateY(-20px);
-                        .svgOne{
-                            visibility: hidden;
-                            opacity: 0% !important;
-                        }
-                        .svgTwo{
-                            visibility: visible !important;
-                            opacity: 100% !important;
-                        }
-                    }
-                    img{
-                        object-fit: cover;
-                    }
-                }
-            }
-            
-        }
+        
         .mainHomeRequest{
             padding: 75px 0;
             text-align: center;
@@ -564,13 +687,12 @@ a{
             display: flex;
             justify-content: space-between; 
             margin: 80px 0;
-    
-            .imageBox{
+            flex-wrap: wrap;
+            .imageBox,.textBox{
                 width: 40%;
-            }
-            .textBox{
-                width: 50%;
-                
+                @include sm{
+                    width: 100%;
+                }
             }
         }
         
@@ -664,12 +786,16 @@ a{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                flex-wrap: wrap;
                 .descriptionProjectClip{
                     width: 64%;
                     border-radius: 10px;
                     overflow: hidden;
                     img{
                         display: block;
+                    }
+                    @include sm{
+                        width: 100%;
                     }
                 }
                 .descriptionProjectText{
@@ -689,6 +815,9 @@ a{
                             font-weight: 300;
                             margin: 0;
                         }
+                    }
+                    @include sm{
+                        width: 100%;
                     }
                 }
              
@@ -858,6 +987,13 @@ a{
             margin-left: 15px;
         }
     }
+    
+}
+.copyRight{
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
 }
 .headingBlogPage{
     margin: 30px 0px;
@@ -1240,6 +1376,9 @@ a{
             .svg{
                 width: 15%;
                 margin:  80px 15px;
+                @include sm{
+                    width: 25%;
+                }
             }
             span{
                 display: block;
@@ -1259,12 +1398,18 @@ a{
             
             .row1 p,.row2 p,.row3 p{
                 display: flex;
+                flex-wrap: wrap;
                 justify-content: space-between;
                 margin: 30px 0;
                 label{
                     width: 49%;
                     text-align: right;
+                    @include sm{
+                        width: 100%;
+                        margin-bottom: 20px;
+                    }
                 }
+                
             }
             .row4 p{
                 display: flex;

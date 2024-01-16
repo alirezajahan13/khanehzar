@@ -148,6 +148,7 @@ function khane_zar_scripts() {
 	wp_enqueue_script( 'swiper', get_template_directory_uri() . '/swiper/swiper-bundle.min.js', array(), _S_VERSION, true );
   	wp_enqueue_script( 'khane_zar-swiperSildes', get_template_directory_uri() . '/js/swiperSlides.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'khane_zar-home', get_template_directory_uri() . '/js/home.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'mobileMenu', get_template_directory_uri() . '/js/mobileMenu.js', array(), _S_VERSION, true );
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
