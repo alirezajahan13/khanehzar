@@ -29,10 +29,10 @@
 			<svg stroke="#777" width="25px" height="25px" xmlns="http://www.w3.org/2000/svg" id="Layer_1" x="0" y="0" version="1.1" viewBox="0 0 29 29" xml:space="preserve"><circle cx="11.854" cy="11.854" r="9" fill="none" stroke-miterlimit="10" stroke-width="2"></circle><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M18.451 18.451l7.695 7.695"></path></svg>
 		</button>
         <input type="text" name="s" id="search" value="<?php the_search_query(); ?>" placeholder="دنبال چه میگردید؟" />
-		<div class="searchButtonContainer">
+		<!-- <div class="searchButtonContainer">
 			<button type="submit" class="generalButton" fdprocessedid="x887ac">جستجو</button>
 			<a class="closeBtn">بستن</a>
-		</div>
+		</div> -->
     </form>
 </div>
 

@@ -148,6 +148,7 @@ function khane_zar_scripts() {
 	wp_enqueue_script( 'swiper', get_template_directory_uri() . '/swiper/swiper-bundle.min.js', array(), _S_VERSION, true );
   	wp_enqueue_script( 'khane_zar-swiperSildes', get_template_directory_uri() . '/js/swiperSlides.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'khane_zar-home', get_template_directory_uri() . '/js/home.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'customLike-home', get_template_directory_uri() . '/js/customLike.js', array(), _S_VERSION, true );
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -229,3 +230,58 @@ function reading_time_shortcode() {
     return '<span class="reading-time">' . calculate_reading_time() . '</span>';
 }
 add_shortcode('reading_time', 'reading_time_shortcode');
+
+
+
+// Add AJAX actions
+function custom_ajax_scripts() {
+    wp_enqueue_script('ajax-script', get_template_directory_uri() . '/js/customLike.js', array('jquery'), '', true);
+
+    // Localize the script with new data
+    $script_data = array(
+        'ajax_url' => admin_url('admin-ajax.php'),
+    );
+    wp_localize_script('ajax-script', 'ajax_object', $script_data);
+}
+
+add_action('wp_enqueue_scripts', 'custom_ajax_scripts');
+
+// Handle AJAX request to update like count
+function update_likes() {
+    $post_id = $_POST['post_id'];
+
+    // Get current like count
+    $current_likes = get_post_meta($post_id, '_like_count', true);
+
+    // Increment like count
+    $new_likes = $current_likes + 1;
+
+    // Update like count in post meta
+    update_post_meta($post_id, '_like_count', $new_likes);
+
+    // Echo the updated like count
+    echo $new_likes;
+
+    // Ensure that WordPress does not print anything else
+    wp_die();
+}
+
+add_action('wp_ajax_update_likes', 'update_likes');
+add_action('wp_ajax_nopriv_update_likes', 'update_likes'); // For non-logged-in users
+
+// Handle AJAX request to get initial like count
+function get_initial_likes() {
+    $post_id = $_POST['post_id'];
+
+    // Get initial like count
+    $initial_likes = get_post_meta($post_id, '_like_count', true) ?: 0;
+
+    // Echo the initial like count
+    echo $initial_likes;
+
+    // Ensure that WordPress does not print anything else
+    wp_die();
+}
+
+add_action('wp_ajax_get_initial_likes', 'get_initial_likes');
+add_action('wp_ajax_nopriv_get_initial_likes', 'get_initial_likes'); // For non-logged-in users
