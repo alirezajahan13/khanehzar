@@ -1,12 +1,93 @@
 @import 'sass/breakpoints';
 
-// .searchOverlay{
-//     position: fixed;
-//     z-index: 9999;
-//     background: rgba(0, 0, 0, 0.462);
-//     left: 0;
-//     right: 0;
-//     bottom: 0;
-//     top: 0;
-//     display: none;
-// }
+.searchOverlay{
+    position: fixed;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.55);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: none;
+}
+.searchParent{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 450px;
+    margin: auto;
+    height: max-content;
+    z-index: 999999;
+    background-color: #1e1e1e;
+    padding: 30px 40px;
+    border-radius: 10px;
+    display: none;
+    @include xs{
+		padding: 20px 30px;
+		width: 85%;
+	}
+    .closeIcon{
+		cursor: pointer;
+        width: max-content;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+	}
+    form{
+		// border: 1px solid;
+    	overflow: hidden;
+    	color: #fff;
+    	background: transparent;
+    	font-size: 16px;
+    	display: flex;
+    	flex-wrap: wrap;
+    	justify-content: space-between;
+        border: 1px solid rgba(255, 255, 255, 0.484);
+        font-family: "yekanbakhweb" !important;
+        border-radius: 10px;
+		button{
+			float: left;
+			background: none;
+			border: none;
+			line-height: 48px;
+			height: 48px;
+			width: 60px;
+			cursor: pointer;
+			padding: 0;
+			font-size: 21px;
+			color: inherit;
+			position: absolute;
+			border-right: 1px solid rgba(255, 255, 255, 0.484);
+			left: 40px;
+			svg{
+				vertical-align: middle;
+    			stroke: #cdb578;
+			}
+		}
+		input{
+			width: 100%;
+    		border: none;
+    		padding: 0 20px;
+    		line-height: 48px;
+    		height: 48px;
+    		margin: 0;
+            background: transparent;
+            color: #fff;
+            font-size: 16px;
+            font-family: "yekanbakhweb" !important;
+		}
+    }
+}
+.generalSinglePostStyle{
+    .entry-footer{
+        .likeCount{
+            button{
+                background: none;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+}  
