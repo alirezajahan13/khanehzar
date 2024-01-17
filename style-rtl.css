@@ -373,9 +373,9 @@ a {
 }
 .mainHomeOurProject .mainHomeOurProjectCards .mainHomeOurProjectCard .homeInnerProjectCardText .homeInnerProjectCardGradient {
   width: 100%;
-  height: 70%;
+  height: 58%;
   position: absolute;
-  top: 58%;
+  top: 65%;
   right: 0;
   background: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
   display: flex;
@@ -391,7 +391,7 @@ a {
   padding-bottom: 40PX;
 }
 .mainHomeOurProject .mainHomeOurProjectCards .mainHomeOurProjectCard:hover .homeInnerProjectCardGradient {
-  top: 35% !important;
+  top: 50% !important;
 }
 .mainHomeOurProject .mainHomeOurProjectCards .mainHomeOurProjectCard:hover {
   transform: translateY(-20px);
@@ -407,6 +407,8 @@ a {
 .mainHomeOurProject .mainHomeOurProjectCards .mainHomeOurProjectCard img {
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .homePageBack .mainHome {
@@ -777,12 +779,52 @@ a {
   }
 }
 
+.mainIntroSectionParent {
+  text-align: center;
+  color: white;
+}
+.mainIntroSectionParent h1 {
+  color: #cdb578;
+}
+.mainIntroSectionParent .categorySecParent {
+  display: flex;
+  justify-content: center;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+}
+.mainIntroSectionParent .categorySecParent a {
+  padding: 10px 30px;
+  margin: 10px;
+}
+@media screen and (max-width: 480px) {
+  .mainIntroSectionParent .categorySecParent {
+    width: 80%;
+  }
+  .mainIntroSectionParent .categorySecParent a {
+    padding: 5px 15px;
+  }
+}
+
+.activeCategory {
+  background-color: #cdb578;
+  color: black;
+  border-radius: 10px;
+}
+
 .mainArchiveGridWrapper {
+  text-align: right;
   max-width: 1280px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 50px 0 100px;
+}
+.mainArchiveGridWrapper .projectArchiveBoxContainer:hover .projectCard {
+  top: 45% !important;
 }
 .mainArchiveGridWrapper a {
   margin: 12px 0;
@@ -796,24 +838,38 @@ a {
 .mainArchiveGridWrapper a:nth-child(4n), .mainArchiveGridWrapper a:nth-child(1), .mainArchiveGridWrapper a:nth-child(4n+1) {
   width: 59%;
 }
+@media screen and (max-width: 768px) {
+  .mainArchiveGridWrapper a:nth-child(4n), .mainArchiveGridWrapper a:nth-child(1), .mainArchiveGridWrapper a:nth-child(4n+1) {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mainArchiveGridWrapper a {
+    width: 100%;
+  }
+}
 .mainArchiveGridWrapper a img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .mainArchiveGridWrapper a .projectCard {
   width: 100%;
-  height: 100%;
+  height: 58%;
   position: absolute;
-  top: 0;
+  top: 65%;
   right: 0;
-  z-index: 90;
-  background: linear-gradient(rgba(19, 19, 19, 0.374), rgba(40, 40, 40, 0.92));
+  background: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
   display: flex;
-  align-items: flex-end;
-  color: w;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: 0.3s !important;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
 }
 .mainArchiveGridWrapper a .projectCard h4 {
-  margin: 20px;
   font-size: 20px;
 }
 
@@ -1082,7 +1138,9 @@ a {
   color: white;
   text-align: center;
   font-size: 12px;
-  font-weight: 300;
+}
+.copyRight a {
+  color: #cdb578;
 }
 
 .headingBlogPage {
@@ -1542,26 +1600,26 @@ a {
   width: 80%;
   margin: auto;
 }
-.contactPageBack .Counseling .CounselingForm .row1 p, .contactPageBack .Counseling .CounselingForm .row2 p, .contactPageBack .Counseling .CounselingForm .row3 p {
+.contactPageBack .Counseling .CounselingForm .row1, .contactPageBack .Counseling .CounselingForm .row2, .contactPageBack .Counseling .CounselingForm .row3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 30px 0;
 }
-.contactPageBack .Counseling .CounselingForm .row1 p label, .contactPageBack .Counseling .CounselingForm .row2 p label, .contactPageBack .Counseling .CounselingForm .row3 p label {
+.contactPageBack .Counseling .CounselingForm .row1 label, .contactPageBack .Counseling .CounselingForm .row2 label, .contactPageBack .Counseling .CounselingForm .row3 label {
   width: 49%;
   text-align: right;
 }
 @media screen and (max-width: 768px) {
-  .contactPageBack .Counseling .CounselingForm .row1 p label, .contactPageBack .Counseling .CounselingForm .row2 p label, .contactPageBack .Counseling .CounselingForm .row3 p label {
+  .contactPageBack .Counseling .CounselingForm .row1 label, .contactPageBack .Counseling .CounselingForm .row2 label, .contactPageBack .Counseling .CounselingForm .row3 label {
     width: 100%;
     margin-bottom: 20px;
   }
 }
-.contactPageBack .Counseling .CounselingForm .row4 p {
+.contactPageBack .Counseling .CounselingForm .row4 {
   display: flex;
 }
-.contactPageBack .Counseling .CounselingForm .row4 p label {
+.contactPageBack .Counseling .CounselingForm .row4 label {
   width: 100%;
   text-align: right;
 }

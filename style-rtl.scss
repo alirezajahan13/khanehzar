@@ -327,9 +327,9 @@ a{
                 }
                 .homeInnerProjectCardGradient{
                     width: 100%;
-                    height: 70%;
+                    height: 58%;
                     position: absolute;
-                    top: 58%;
+                    top: 65%;
                     right: 0;
                     background: linear-gradient(rgba(0, 0, 0, 0),rgb(0, 0, 0));
                     display: flex;
@@ -347,7 +347,7 @@ a{
                 }
             }
             &:hover .homeInnerProjectCardGradient {
-                top: 35% !important;
+                top: 50% !important;
             }
             &:hover {
                 transform: translateY(-20px);
@@ -362,6 +362,8 @@ a{
             }
             img{
                 object-fit: cover;
+                width: 100%;
+                height: 100%;
             }
         }
     }
@@ -727,17 +729,50 @@ a{
         
     }
 }
+.mainIntroSectionParent{
+    text-align: center;
+    color: white;
+    h1{
+        color: #cdb578;
+    }
+    .categorySecParent{
+        display: flex;
+        justify-content: center;
+        width: max-content;
+        margin: auto;
+        background-color: #1e1e1e;
+        border-radius: 10px;
+        
+        a{
+            padding: 10px 30px;
+            margin: 10px;
+        }
+        @include xs{
+            width: 80%;
+            a{
+                padding: 5px 15px;
+            }
+        }
+    }
+}
+.activeCategory{
+    background-color: #cdb578;
+    color: black;
+    border-radius: 10px;
+}
 .mainArchiveGridWrapper{
+    text-align: right;
     max-width: 1280px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-    // display: grid;
-    // grid-template-columns: auto auto ;
-    // gap: 20px;
-    
+    padding: 50px 0 100px;
+    .projectArchiveBoxContainer{
+        &:hover .projectCard{
+            top: 45% !important;
+        }
+    }
     a{  
         margin: 12px 0;
         border-radius: 10PX;
@@ -748,25 +783,35 @@ a{
         
         &:nth-child(4n),&:nth-child(1),&:nth-child(4n+1){
             width: 59%;
+            @include sm{
+                width: 100% ;
+            }
+        }
+        @include sm{
+            width: 100% ;
         }
         img{
             width: 100%;
             height: 100%;
+            object-fit: cover;
         }
         position: relative;
         .projectCard{
             width: 100%;
-            height: 100%;
+            height: 58%;
             position: absolute;
-            top: 0;
+            top: 65%;
             right: 0;
-            z-index: 90;
-            background: linear-gradient(rgba(19, 19, 19, 0.374),rgba(40, 40, 40, 0.92));
+            background: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
             display: flex;
-            align-items: flex-end;
-            color: w;
+            flex-direction: column;
+            justify-content: flex-end;
+            transition: 0.3s !important;
+            display: flex;
+            flex-direction: column;
+            
+            padding: 0 20px;
             h4{
-              margin: 20px; 
               font-size: 20px; 
             }
         }
@@ -1022,7 +1067,9 @@ a{
     color: white;
     text-align: center;
     font-size: 12px;
-    font-weight: 300;
+    a{
+        color: #cdb578;
+    }
 }
 .headingBlogPage{
     margin: 30px 0px;
@@ -1436,8 +1483,7 @@ a{
         .CounselingForm{
             width: 80%;
             margin: auto;
-            
-            .row1 p,.row2 p,.row3 p{
+            .row1,.row2,.row3{
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
@@ -1452,7 +1498,7 @@ a{
                 }
                 
             }
-            .row4 p{
+            .row4{
                 display: flex;
                 label{
                     width: 100%;

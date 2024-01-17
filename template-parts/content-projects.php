@@ -2,5 +2,6 @@
     <?php the_post_thumbnail();?>
     <div class="projectCard">
         <h4><?php echo get_the_title();?></h4>
+        <p><?php echo the_excerpt(); ?></p>
     </div> 
 </a>
