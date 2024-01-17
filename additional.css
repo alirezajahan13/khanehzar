@@ -41,7 +41,7 @@
 .searchOverlay {
   position: fixed;
   z-index: 9999;
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.7);
   left: 0;
   right: 0;
   bottom: 0;
@@ -67,7 +67,7 @@
 }
 @media screen and (max-width: 480px) {
   .searchParent {
-    padding: 20px 30px;
+    padding: 40px 15px 20px;
     width: 85%;
   }
 }
@@ -105,6 +105,11 @@
   position: absolute;
   border-right: 1px solid rgba(255, 255, 255, 0.484);
   left: 40px;
+}
+@media screen and (max-width: 768px) {
+  .searchParent form button {
+    left: 10px;
+  }
 }
 .searchParent form button svg {
   vertical-align: middle;

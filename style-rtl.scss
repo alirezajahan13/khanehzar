@@ -38,11 +38,16 @@ body{
     background-color: #fff;
     top: 0px;
     bottom: 0;
+    right: 0;
+    left: 0;
     height: auto;
-    width: 280px;
-    right: -100%;
+    width: 100vh;
+    // right: -100%;
     z-index: 999999991;
-    transition: all 0.4s;
+    // transition: all 0.4s;
+    display: none;
+    backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.4);
     .closeMenu{
         margin: 20px;
     }
@@ -135,6 +140,7 @@ a{
 }
 .mainHeaderBack{
     color: white;
+    padding: 10px 0px;
     .mainHeader{
         display: flex;
         justify-content: space-between;
@@ -142,18 +148,20 @@ a{
         @include sm{
             .logoSection{
                 order: 2;
-                
+                width: 50%;
+                margin: auto;
+                text-align: center;
             }
             .signSection{
                 order: 1;
                 svg{
                     margin: 0 0 0 20px !important;
                 }
-                width: 20%;
+                width: 25%;
             }
             .menuMobile{
                 order: 3;
-                width: 20%;
+                width: 25%;
             }
         }
         .menuSection{
@@ -1147,6 +1155,7 @@ a{
             display: block;
             border-radius: 10px;
             margin: auto;
+            height: auto;
         }
     }
     .entry-content{
@@ -1158,6 +1167,9 @@ a{
             color: #eeeeee;
             text-align: justify;
             line-height: 30px;
+        }
+        img{
+            border-radius: 10px;
         }
     }
     .entry-footer{
@@ -1233,10 +1245,18 @@ a{
                                     }
                                 }
                             }
+                            .comment-metadata{
+                                @include sm{
+                                    margin-top: 5px;
+                                }
+                            }
                             .comment-metadata a time{
                                 font-size: 14px;
                                 color: #eeeeee;
                                 font-weight: 200;
+                                @include xs{
+                                    font-size: 12px;
+                                }
                             }
                         }
                         .comment-content{
