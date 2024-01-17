@@ -1,5 +1,5 @@
 var $ = jQuery;
-var svg = '<svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 1" xml:space="preserve" transform="rotate(90)"><path fill="#231F20" d="M.311.817a.02.02 0 0 0 .028 0l.3-.3a.02.02 0 0 0 0-.028l-.3-.3a.02.02 0 1 0-.028.028l.286.286-.286.286a.02.02 0 0 0 0 .028z"/></svg>'
+var svg = '<svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 1" xml:space="preserve" transform="rotate(90)"><path fill="#cdb578" d="M.311.817a.02.02 0 0 0 .028 0l.3-.3a.02.02 0 0 0 0-.028l-.3-.3a.02.02 0 1 0-.028.028l.286.286-.286.286a.02.02 0 0 0 0 .028z"/></svg>'
 
 
 $(document).ready(function(){

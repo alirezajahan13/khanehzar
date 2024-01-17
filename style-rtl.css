@@ -87,21 +87,40 @@ body {
   right: 0;
   left: 0;
   height: auto;
-  width: 100vh;
+  width: 100%;
   z-index: 999999991;
   display: none;
-  -webkit-backdrop-filter: blur(8px);
-          backdrop-filter: blur(8px);
-  background: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(14px);
+          backdrop-filter: blur(14px);
+  background: rgba(0, 0, 0, 0.5);
 }
-.mobileMenuContainer .closeMenu {
-  margin: 20px;
+.mobileMenuContainer .mobileMenuTopHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0px 30px 0px;
+}
+.mobileMenuContainer .mobileMenuTopHeader .signSection {
+  width: 25%;
+  display: flex;
+  gap: 10px;
+}
+.mobileMenuContainer .mobileMenuTopHeader .logoSection {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+.mobileMenuContainer .mobileMenuTopHeader .closeMobMenu {
+  width: 25%;
+  display: flex;
+  justify-content: end;
 }
 .mobileMenuContainer .current-menu-item a {
   color: #cdb578;
 }
 .mobileMenuContainer ul {
-  padding: 0 20px;
+  padding: 0 15px;
   list-style-type: none;
 }
 .mobileMenuContainer ul li {
@@ -111,16 +130,17 @@ body {
   display: none;
 }
 .mobileMenuContainer ul li a {
-  font-size: 13px;
-  font-weight: 500;
-  color: black;
+  font-size: 14px;
+  font-weight: 600;
+  color: #eeeeee;
   transition: 0.3s;
   display: flex;
   align-items: center;
+  gap: 5px;
 }
 .mobileMenuContainer ul li a svg {
-  margin-right: 5px;
   transition: 0.4s;
+  display: block;
 }
 .mobileMenuContainer ul li a:hover {
   color: #cdb578;
