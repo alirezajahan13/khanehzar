@@ -18,6 +18,8 @@ function stepCounter(elementSelector , currentNumber ,endNumber , stepNumber , t
 }
 
 $(document).ready(function(){
+    $('p:empty').remove();
+
     if($("#counterNumbers").length) {
         let objectCenter = $('#counterNumbers').offset().top + ($('#counterNumbers').outerHeight(true)/2);
 
@@ -45,5 +47,14 @@ $(document).ready(function(){
         $('.searchOverlay').click(function(){
             $('.searchParent').slideUp(300);
             $('.searchOverlay').slideUp(300);
-        })
+        });
+        let currentUrl = window.location.href;
+        $('.categoryItem').each(function() {
+            let categoryUrl = $(this).attr('href');
+            if (currentUrl === categoryUrl) {
+            $(this).addClass('activeCategory');
+            return false;
+            }
+        });
+        
 });

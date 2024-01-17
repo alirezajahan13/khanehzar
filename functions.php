@@ -190,7 +190,7 @@ function bbloomer_shop_product_short_description() {
 }
 
 function my_excerpt_length($length){
-	return 18;
+	return 10;
 }
 add_filter('excerpt_length', 'my_excerpt_length');
 
@@ -330,3 +330,15 @@ function acf_add_allowed_svg_tag( $tags, $context ) {
     }
     return $tags;
 }
+
+add_filter('wpcf7_autop_or_not', '__return_false');
+add_action('pre_get_posts', function($query) {
+	if ( ! is_admin() && $query->is_main_query() ) {
+	
+		if ( is_archive() || is_category() ) {
+			$query->set( 'post_type', 'project' );
+		}
+	
+	
+	}
+	});
